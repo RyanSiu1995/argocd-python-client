@@ -4,3 +4,9 @@ generate:
 		--git-host github.com --git-repo-id argocd-python-client \
 		--git-user-id RyanSiu1995 -o ./ \
 		--package-name argocd_python_client
+
+.PHONY: clean
+clean:
+	@rm -rf ./dist || true
+	@rm -rf ./build || true
+	@rm -rf ./argocd_python_client.egg-info || true
