@@ -1,4 +1,4 @@
-# openapi_client.AccountServiceApi
+# argocd_python_client.AccountServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,20 +21,20 @@ CanI checks if the current account has permission to perform an action
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import account_service_api
-from openapi_client.model.account_can_i_response import AccountCanIResponse
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import account_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.account_can_i_response import AccountCanIResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = account_service_api.AccountServiceApi(api_client)
     resource = "resource_example" # str | 
@@ -46,7 +46,7 @@ with openapi_client.ApiClient() as api_client:
         # CanI checks if the current account has permission to perform an action
         api_response = api_instance.account_service_can_i(resource, action, subresource)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling AccountServiceApi->account_service_can_i: %s\n" % e)
 ```
 
@@ -90,21 +90,21 @@ CreateToken creates a token
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import account_service_api
-from openapi_client.model.account_create_token_response import AccountCreateTokenResponse
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.account_create_token_request import AccountCreateTokenRequest
+import argocd_python_client
+from argocd_python_client.api import account_service_api
+from argocd_python_client.model.account_create_token_request import AccountCreateTokenRequest
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.account_create_token_response import AccountCreateTokenResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = account_service_api.AccountServiceApi(api_client)
     name = "name_example" # str | 
@@ -119,7 +119,7 @@ with openapi_client.ApiClient() as api_client:
         # CreateToken creates a token
         api_response = api_instance.account_service_create_token(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling AccountServiceApi->account_service_create_token: %s\n" % e)
 ```
 
@@ -162,19 +162,19 @@ DeleteToken deletes a token
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import account_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import account_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = account_service_api.AccountServiceApi(api_client)
     name = "name_example" # str | 
@@ -185,7 +185,7 @@ with openapi_client.ApiClient() as api_client:
         # DeleteToken deletes a token
         api_response = api_instance.account_service_delete_token(name, id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling AccountServiceApi->account_service_delete_token: %s\n" % e)
 ```
 
@@ -228,20 +228,20 @@ GetAccount returns an account
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import account_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.account_account import AccountAccount
+import argocd_python_client
+from argocd_python_client.api import account_service_api
+from argocd_python_client.model.account_account import AccountAccount
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = account_service_api.AccountServiceApi(api_client)
     name = "name_example" # str | 
@@ -251,7 +251,7 @@ with openapi_client.ApiClient() as api_client:
         # GetAccount returns an account
         api_response = api_instance.account_service_get_account(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling AccountServiceApi->account_service_get_account: %s\n" % e)
 ```
 
@@ -293,20 +293,20 @@ ListAccounts returns the list of accounts
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import account_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.account_accounts_list import AccountAccountsList
+import argocd_python_client
+from argocd_python_client.api import account_service_api
+from argocd_python_client.model.account_accounts_list import AccountAccountsList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = account_service_api.AccountServiceApi(api_client)
 
@@ -315,7 +315,7 @@ with openapi_client.ApiClient() as api_client:
         # ListAccounts returns the list of accounts
         api_response = api_instance.account_service_list_accounts()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling AccountServiceApi->account_service_list_accounts: %s\n" % e)
 ```
 
@@ -354,20 +354,20 @@ UpdatePassword updates an account's password to a new value
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import account_service_api
-from openapi_client.model.account_update_password_request import AccountUpdatePasswordRequest
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import account_service_api
+from argocd_python_client.model.account_update_password_request import AccountUpdatePasswordRequest
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = account_service_api.AccountServiceApi(api_client)
     body = AccountUpdatePasswordRequest(
@@ -381,7 +381,7 @@ with openapi_client.ApiClient() as api_client:
         # UpdatePassword updates an account's password to a new value
         api_response = api_instance.account_service_update_password(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling AccountServiceApi->account_service_update_password: %s\n" % e)
 ```
 

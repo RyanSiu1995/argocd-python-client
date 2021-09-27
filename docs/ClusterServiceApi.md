@@ -1,4 +1,4 @@
-# openapi_client.ClusterServiceApi
+# argocd_python_client.ClusterServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,20 +22,20 @@ Create creates a cluster
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_cluster import V1alpha1Cluster
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.v1alpha1_cluster import V1alpha1Cluster
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     body = V1alpha1Cluster(
@@ -113,7 +113,7 @@ with openapi_client.ApiClient() as api_client:
         # Create creates a cluster
         api_response = api_instance.cluster_service_create(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_create: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -122,7 +122,7 @@ with openapi_client.ApiClient() as api_client:
         # Create creates a cluster
         api_response = api_instance.cluster_service_create(body, upsert=upsert)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_create: %s\n" % e)
 ```
 
@@ -165,19 +165,19 @@ Delete deletes a cluster
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     server = "server_example" # str | 
@@ -188,7 +188,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete deletes a cluster
         api_response = api_instance.cluster_service_delete(server)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_delete: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -197,7 +197,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete deletes a cluster
         api_response = api_instance.cluster_service_delete(server, name=name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_delete: %s\n" % e)
 ```
 
@@ -240,20 +240,20 @@ Get returns a cluster by server address
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_cluster import V1alpha1Cluster
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.v1alpha1_cluster import V1alpha1Cluster
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     server = "server_example" # str | 
@@ -264,7 +264,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns a cluster by server address
         api_response = api_instance.cluster_service_get(server)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_get: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -273,7 +273,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns a cluster by server address
         api_response = api_instance.cluster_service_get(server, name=name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_get: %s\n" % e)
 ```
 
@@ -316,20 +316,20 @@ InvalidateCache invalidates cluster cache
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_cluster import V1alpha1Cluster
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.v1alpha1_cluster import V1alpha1Cluster
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     server = "server_example" # str | 
@@ -339,7 +339,7 @@ with openapi_client.ApiClient() as api_client:
         # InvalidateCache invalidates cluster cache
         api_response = api_instance.cluster_service_invalidate_cache(server)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_invalidate_cache: %s\n" % e)
 ```
 
@@ -381,20 +381,20 @@ List returns list of clusters
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_cluster_list import V1alpha1ClusterList
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.v1alpha1_cluster_list import V1alpha1ClusterList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     server = "server_example" # str |  (optional)
@@ -406,7 +406,7 @@ with openapi_client.ApiClient() as api_client:
         # List returns list of clusters
         api_response = api_instance.cluster_service_list(server=server, name=name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_list: %s\n" % e)
 ```
 
@@ -449,19 +449,19 @@ RotateAuth rotates the bearer token used for a cluster
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     server = "server_example" # str | 
@@ -471,7 +471,7 @@ with openapi_client.ApiClient() as api_client:
         # RotateAuth rotates the bearer token used for a cluster
         api_response = api_instance.cluster_service_rotate_auth(server)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_rotate_auth: %s\n" % e)
 ```
 
@@ -513,20 +513,20 @@ Update updates a cluster
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import cluster_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_cluster import V1alpha1Cluster
+import argocd_python_client
+from argocd_python_client.api import cluster_service_api
+from argocd_python_client.model.v1alpha1_cluster import V1alpha1Cluster
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cluster_service_api.ClusterServiceApi(api_client)
     cluster_server = "cluster.server_example" # str | Server is the API server URL of the Kubernetes cluster
@@ -607,7 +607,7 @@ with openapi_client.ApiClient() as api_client:
         # Update updates a cluster
         api_response = api_instance.cluster_service_update(cluster_server, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_update: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -616,7 +616,7 @@ with openapi_client.ApiClient() as api_client:
         # Update updates a cluster
         api_response = api_instance.cluster_service_update(cluster_server, body, updated_fields=updated_fields)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ClusterServiceApi->cluster_service_update: %s\n" % e)
 ```
 

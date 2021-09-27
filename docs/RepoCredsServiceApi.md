@@ -1,4 +1,4 @@
-# openapi_client.RepoCredsServiceApi
+# argocd_python_client.RepoCredsServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,20 +19,20 @@ CreateRepositoryCredentials creates a new repository credential set
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repo_creds_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
+import argocd_python_client
+from argocd_python_client.api import repo_creds_service_api
+from argocd_python_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repo_creds_service_api.RepoCredsServiceApi(api_client)
     body = V1alpha1RepoCreds(
@@ -54,7 +54,7 @@ with openapi_client.ApiClient() as api_client:
         # CreateRepositoryCredentials creates a new repository credential set
         api_response = api_instance.repo_creds_service_create_repository_credentials(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepoCredsServiceApi->repo_creds_service_create_repository_credentials: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -63,7 +63,7 @@ with openapi_client.ApiClient() as api_client:
         # CreateRepositoryCredentials creates a new repository credential set
         api_response = api_instance.repo_creds_service_create_repository_credentials(body, upsert=upsert)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepoCredsServiceApi->repo_creds_service_create_repository_credentials: %s\n" % e)
 ```
 
@@ -106,19 +106,19 @@ DeleteRepositoryCredentials deletes a repository credential set from the configu
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repo_creds_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import repo_creds_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repo_creds_service_api.RepoCredsServiceApi(api_client)
     url = "url_example" # str | 
@@ -128,7 +128,7 @@ with openapi_client.ApiClient() as api_client:
         # DeleteRepositoryCredentials deletes a repository credential set from the configuration
         api_response = api_instance.repo_creds_service_delete_repository_credentials(url)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepoCredsServiceApi->repo_creds_service_delete_repository_credentials: %s\n" % e)
 ```
 
@@ -170,20 +170,20 @@ ListRepositoryCredentials gets a list of all configured repository credential se
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repo_creds_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repo_creds_list import V1alpha1RepoCredsList
+import argocd_python_client
+from argocd_python_client.api import repo_creds_service_api
+from argocd_python_client.model.v1alpha1_repo_creds_list import V1alpha1RepoCredsList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repo_creds_service_api.RepoCredsServiceApi(api_client)
     url = "url_example" # str | Repo URL for query. (optional)
@@ -194,7 +194,7 @@ with openapi_client.ApiClient() as api_client:
         # ListRepositoryCredentials gets a list of all configured repository credential sets
         api_response = api_instance.repo_creds_service_list_repository_credentials(url=url)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepoCredsServiceApi->repo_creds_service_list_repository_credentials: %s\n" % e)
 ```
 
@@ -236,20 +236,20 @@ UpdateRepositoryCredentials updates a repository credential set
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repo_creds_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
+import argocd_python_client
+from argocd_python_client.api import repo_creds_service_api
+from argocd_python_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repo_creds_service_api.RepoCredsServiceApi(api_client)
     creds_url = "creds.url_example" # str | URL is the URL that this credentials matches to
@@ -271,7 +271,7 @@ with openapi_client.ApiClient() as api_client:
         # UpdateRepositoryCredentials updates a repository credential set
         api_response = api_instance.repo_creds_service_update_repository_credentials(creds_url, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepoCredsServiceApi->repo_creds_service_update_repository_credentials: %s\n" % e)
 ```
 

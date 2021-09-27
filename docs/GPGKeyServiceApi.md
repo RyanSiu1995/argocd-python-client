@@ -1,4 +1,4 @@
-# openapi_client.GPGKeyServiceApi
+# argocd_python_client.GPGKeyServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,21 +19,21 @@ Create one or more GPG public keys in the server's configuration
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import gpg_key_service_api
-from openapi_client.model.gpgkey_gnu_pg_public_key_create_response import GpgkeyGnuPGPublicKeyCreateResponse
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_gnu_pg_public_key import V1alpha1GnuPGPublicKey
+import argocd_python_client
+from argocd_python_client.api import gpg_key_service_api
+from argocd_python_client.model.gpgkey_gnu_pg_public_key_create_response import GpgkeyGnuPGPublicKeyCreateResponse
+from argocd_python_client.model.v1alpha1_gnu_pg_public_key import V1alpha1GnuPGPublicKey
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = gpg_key_service_api.GPGKeyServiceApi(api_client)
     body = V1alpha1GnuPGPublicKey(
@@ -51,7 +51,7 @@ with openapi_client.ApiClient() as api_client:
         # Create one or more GPG public keys in the server's configuration
         api_response = api_instance.g_pg_key_service_create(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling GPGKeyServiceApi->g_pg_key_service_create: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -60,7 +60,7 @@ with openapi_client.ApiClient() as api_client:
         # Create one or more GPG public keys in the server's configuration
         api_response = api_instance.g_pg_key_service_create(body, upsert=upsert)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling GPGKeyServiceApi->g_pg_key_service_create: %s\n" % e)
 ```
 
@@ -103,19 +103,19 @@ Delete specified GPG public key from the server's configuration
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import gpg_key_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import gpg_key_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = gpg_key_service_api.GPGKeyServiceApi(api_client)
     key_id = "keyID_example" # str | The GPG key ID to query for. (optional)
@@ -126,7 +126,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete specified GPG public key from the server's configuration
         api_response = api_instance.g_pg_key_service_delete(key_id=key_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling GPGKeyServiceApi->g_pg_key_service_delete: %s\n" % e)
 ```
 
@@ -168,20 +168,20 @@ Get information about specified GPG public key from the server
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import gpg_key_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_gnu_pg_public_key import V1alpha1GnuPGPublicKey
+import argocd_python_client
+from argocd_python_client.api import gpg_key_service_api
+from argocd_python_client.model.v1alpha1_gnu_pg_public_key import V1alpha1GnuPGPublicKey
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = gpg_key_service_api.GPGKeyServiceApi(api_client)
     key_id = "keyID_example" # str | The GPG key ID to query for
@@ -191,7 +191,7 @@ with openapi_client.ApiClient() as api_client:
         # Get information about specified GPG public key from the server
         api_response = api_instance.g_pg_key_service_get(key_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling GPGKeyServiceApi->g_pg_key_service_get: %s\n" % e)
 ```
 
@@ -233,20 +233,20 @@ List all available repository certificates
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import gpg_key_service_api
-from openapi_client.model.v1alpha1_gnu_pg_public_key_list import V1alpha1GnuPGPublicKeyList
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import gpg_key_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.v1alpha1_gnu_pg_public_key_list import V1alpha1GnuPGPublicKeyList
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = gpg_key_service_api.GPGKeyServiceApi(api_client)
     key_id = "keyID_example" # str | The GPG key ID to query for. (optional)
@@ -257,7 +257,7 @@ with openapi_client.ApiClient() as api_client:
         # List all available repository certificates
         api_response = api_instance.g_pg_key_service_list(key_id=key_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling GPGKeyServiceApi->g_pg_key_service_list: %s\n" % e)
 ```
 

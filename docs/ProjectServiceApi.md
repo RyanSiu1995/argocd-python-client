@@ -1,4 +1,4 @@
-# openapi_client.ProjectServiceApi
+# argocd_python_client.ProjectServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -25,21 +25,21 @@ Create a new project
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_app_project import V1alpha1AppProject
-from openapi_client.model.project_project_create_request import ProjectProjectCreateRequest
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.project_project_create_request import ProjectProjectCreateRequest
+from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     body = ProjectProjectCreateRequest(
@@ -207,7 +207,7 @@ with openapi_client.ApiClient() as api_client:
         # Create a new project
         api_response = api_instance.project_service_create(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_create: %s\n" % e)
 ```
 
@@ -249,21 +249,21 @@ Create a new project token
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.project_project_token_response import ProjectProjectTokenResponse
-from openapi_client.model.project_project_token_create_request import ProjectProjectTokenCreateRequest
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.project_project_token_response import ProjectProjectTokenResponse
+from argocd_python_client.model.project_project_token_create_request import ProjectProjectTokenCreateRequest
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     project = "project_example" # str | 
@@ -281,7 +281,7 @@ with openapi_client.ApiClient() as api_client:
         # Create a new project token
         api_response = api_instance.project_service_create_token(project, role, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_create_token: %s\n" % e)
 ```
 
@@ -325,19 +325,19 @@ Delete deletes a project
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     name = "name_example" # str | 
@@ -347,7 +347,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete deletes a project
         api_response = api_instance.project_service_delete(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_delete: %s\n" % e)
 ```
 
@@ -389,19 +389,19 @@ Delete a new project token
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     project = "project_example" # str | 
@@ -414,7 +414,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete a new project token
         api_response = api_instance.project_service_delete_token(project, role, iat)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_delete_token: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -423,7 +423,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete a new project token
         api_response = api_instance.project_service_delete_token(project, role, iat, id=id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_delete_token: %s\n" % e)
 ```
 
@@ -468,20 +468,20 @@ Get returns a project by name
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_app_project import V1alpha1AppProject
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     name = "name_example" # str | 
@@ -491,7 +491,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns a project by name
         api_response = api_instance.project_service_get(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_get: %s\n" % e)
 ```
 
@@ -533,20 +533,20 @@ Get returns a virtual project by name
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.project_global_projects_response import ProjectGlobalProjectsResponse
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.project_global_projects_response import ProjectGlobalProjectsResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     name = "name_example" # str | 
@@ -556,7 +556,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns a virtual project by name
         api_response = api_instance.project_service_get_global_projects(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_get_global_projects: %s\n" % e)
 ```
 
@@ -598,20 +598,20 @@ GetSchedulesState returns true if there are any active sync syncWindows
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.project_sync_windows_response import ProjectSyncWindowsResponse
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.project_sync_windows_response import ProjectSyncWindowsResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     name = "name_example" # str | 
@@ -621,7 +621,7 @@ with openapi_client.ApiClient() as api_client:
         # GetSchedulesState returns true if there are any active sync syncWindows
         api_response = api_instance.project_service_get_sync_windows_state(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_get_sync_windows_state: %s\n" % e)
 ```
 
@@ -663,20 +663,20 @@ List returns list of projects
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.v1alpha1_app_project_list import V1alpha1AppProjectList
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.v1alpha1_app_project_list import V1alpha1AppProjectList
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     name = "name_example" # str |  (optional)
@@ -687,7 +687,7 @@ with openapi_client.ApiClient() as api_client:
         # List returns list of projects
         api_response = api_instance.project_service_list(name=name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_list: %s\n" % e)
 ```
 
@@ -729,20 +729,20 @@ ListEvents returns a list of project events
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.v1_event_list import V1EventList
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.v1_event_list import V1EventList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     name = "name_example" # str | 
@@ -752,7 +752,7 @@ with openapi_client.ApiClient() as api_client:
         # ListEvents returns a list of project events
         api_response = api_instance.project_service_list_events(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_list_events: %s\n" % e)
 ```
 
@@ -794,21 +794,21 @@ Update updates a project
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import project_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_app_project import V1alpha1AppProject
-from openapi_client.model.project_project_update_request import ProjectProjectUpdateRequest
+import argocd_python_client
+from argocd_python_client.api import project_service_api
+from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.project_project_update_request import ProjectProjectUpdateRequest
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = project_service_api.ProjectServiceApi(api_client)
     project_metadata_name = "project.metadata.name_example" # str | Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names +optional
@@ -976,7 +976,7 @@ with openapi_client.ApiClient() as api_client:
         # Update updates a project
         api_response = api_instance.project_service_update(project_metadata_name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ProjectServiceApi->project_service_update: %s\n" % e)
 ```
 

@@ -1,4 +1,4 @@
-# openapi_client.ApplicationServiceApi
+# argocd_python_client.ApplicationServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -40,20 +40,20 @@ Create creates an application
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1alpha1_application import V1alpha1Application
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     body = V1alpha1Application(
@@ -869,7 +869,7 @@ with openapi_client.ApiClient() as api_client:
         # Create creates an application
         api_response = api_instance.application_service_create(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_create: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -878,7 +878,7 @@ with openapi_client.ApiClient() as api_client:
         # Create creates an application
         api_response = api_instance.application_service_create(body, upsert=upsert, validate=validate)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_create: %s\n" % e)
 ```
 
@@ -922,19 +922,19 @@ Delete deletes an application
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -946,7 +946,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete deletes an application
         api_response = api_instance.application_service_delete(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_delete: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -955,7 +955,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete deletes an application
         api_response = api_instance.application_service_delete(name, cascade=cascade, propagation_policy=propagation_policy)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_delete: %s\n" % e)
 ```
 
@@ -999,19 +999,19 @@ DeleteResource deletes a single application resource
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1028,7 +1028,7 @@ with openapi_client.ApiClient() as api_client:
         # DeleteResource deletes a single application resource
         api_response = api_instance.application_service_delete_resource(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_delete_resource: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1037,7 +1037,7 @@ with openapi_client.ApiClient() as api_client:
         # DeleteResource deletes a single application resource
         api_response = api_instance.application_service_delete_resource(name, namespace=namespace, resource_name=resource_name, version=version, group=group, kind=kind, force=force, orphan=orphan)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_delete_resource: %s\n" % e)
 ```
 
@@ -1086,20 +1086,20 @@ Get returns an application by name
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1alpha1_application import V1alpha1Application
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | the application's name
@@ -1116,7 +1116,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns an application by name
         api_response = api_instance.application_service_get(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1125,7 +1125,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns an application by name
         api_response = api_instance.application_service_get(name, refresh=refresh, project=project, resource_version=resource_version, selector=selector, repo=repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get: %s\n" % e)
 ```
 
@@ -1172,20 +1172,20 @@ Get returns sync windows of the application
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.application_application_sync_windows_response import ApplicationApplicationSyncWindowsResponse
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.application_application_sync_windows_response import ApplicationApplicationSyncWindowsResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1195,7 +1195,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns sync windows of the application
         api_response = api_instance.application_service_get_application_sync_windows(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get_application_sync_windows: %s\n" % e)
 ```
 
@@ -1237,20 +1237,20 @@ GetManifests returns application manifests
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.repository_manifest_response import RepositoryManifestResponse
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.repository_manifest_response import RepositoryManifestResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1261,7 +1261,7 @@ with openapi_client.ApiClient() as api_client:
         # GetManifests returns application manifests
         api_response = api_instance.application_service_get_manifests(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get_manifests: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1270,7 +1270,7 @@ with openapi_client.ApiClient() as api_client:
         # GetManifests returns application manifests
         api_response = api_instance.application_service_get_manifests(name, revision=revision)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get_manifests: %s\n" % e)
 ```
 
@@ -1313,20 +1313,20 @@ GetResource returns single application resource
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.application_application_resource_response import ApplicationApplicationResourceResponse
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.application_application_resource_response import ApplicationApplicationResourceResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1341,7 +1341,7 @@ with openapi_client.ApiClient() as api_client:
         # GetResource returns single application resource
         api_response = api_instance.application_service_get_resource(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get_resource: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1350,7 +1350,7 @@ with openapi_client.ApiClient() as api_client:
         # GetResource returns single application resource
         api_response = api_instance.application_service_get_resource(name, namespace=namespace, resource_name=resource_name, version=version, group=group, kind=kind)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_get_resource: %s\n" % e)
 ```
 
@@ -1397,20 +1397,20 @@ List returns list of applications
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_application_list import V1alpha1ApplicationList
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application_list import V1alpha1ApplicationList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | the application's name. (optional)
@@ -1428,7 +1428,7 @@ with openapi_client.ApiClient() as api_client:
         # List returns list of applications
         api_response = api_instance.application_service_list(name=name, refresh=refresh, project=project, resource_version=resource_version, selector=selector, repo=repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_list: %s\n" % e)
 ```
 
@@ -1475,20 +1475,20 @@ ListResourceActions returns list of resource actions
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.application_resource_actions_list_response import ApplicationResourceActionsListResponse
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.application_resource_actions_list_response import ApplicationResourceActionsListResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1503,7 +1503,7 @@ with openapi_client.ApiClient() as api_client:
         # ListResourceActions returns list of resource actions
         api_response = api_instance.application_service_list_resource_actions(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_list_resource_actions: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1512,7 +1512,7 @@ with openapi_client.ApiClient() as api_client:
         # ListResourceActions returns list of resource actions
         api_response = api_instance.application_service_list_resource_actions(name, namespace=namespace, resource_name=resource_name, version=version, group=group, kind=kind)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_list_resource_actions: %s\n" % e)
 ```
 
@@ -1559,20 +1559,20 @@ ListResourceEvents returns a list of event resources
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1_event_list import V1EventList
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1_event_list import V1EventList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1585,7 +1585,7 @@ with openapi_client.ApiClient() as api_client:
         # ListResourceEvents returns a list of event resources
         api_response = api_instance.application_service_list_resource_events(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_list_resource_events: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1594,7 +1594,7 @@ with openapi_client.ApiClient() as api_client:
         # ListResourceEvents returns a list of event resources
         api_response = api_instance.application_service_list_resource_events(name, resource_namespace=resource_namespace, resource_name=resource_name, resource_uid=resource_uid)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_list_resource_events: %s\n" % e)
 ```
 
@@ -1639,20 +1639,20 @@ ManagedResources returns list of managed resources
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.application_managed_resources_response import ApplicationManagedResourcesResponse
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.application_managed_resources_response import ApplicationManagedResourcesResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     application_name = "applicationName_example" # str | 
@@ -1667,7 +1667,7 @@ with openapi_client.ApiClient() as api_client:
         # ManagedResources returns list of managed resources
         api_response = api_instance.application_service_managed_resources(application_name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_managed_resources: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1676,7 +1676,7 @@ with openapi_client.ApiClient() as api_client:
         # ManagedResources returns list of managed resources
         api_response = api_instance.application_service_managed_resources(application_name, namespace=namespace, name=name, version=version, group=group, kind=kind)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_managed_resources: %s\n" % e)
 ```
 
@@ -1723,21 +1723,21 @@ Patch patch an application
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1alpha1_application import V1alpha1Application
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.application_application_patch_request import ApplicationApplicationPatchRequest
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
+from argocd_python_client.model.application_application_patch_request import ApplicationApplicationPatchRequest
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1752,7 +1752,7 @@ with openapi_client.ApiClient() as api_client:
         # Patch patch an application
         api_response = api_instance.application_service_patch(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_patch: %s\n" % e)
 ```
 
@@ -1795,20 +1795,20 @@ PatchResource patch single application resource
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.application_application_resource_response import ApplicationApplicationResourceResponse
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.application_application_resource_response import ApplicationApplicationResourceResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1825,7 +1825,7 @@ with openapi_client.ApiClient() as api_client:
         # PatchResource patch single application resource
         api_response = api_instance.application_service_patch_resource(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_patch_resource: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1834,7 +1834,7 @@ with openapi_client.ApiClient() as api_client:
         # PatchResource patch single application resource
         api_response = api_instance.application_service_patch_resource(name, body, namespace=namespace, resource_name=resource_name, version=version, group=group, kind=kind, patch_type=patch_type)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_patch_resource: %s\n" % e)
 ```
 
@@ -1883,20 +1883,20 @@ PodLogs returns stream of log entries for the specified pod. Pod
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.stream_result_of_application_log_entry import StreamResultOfApplicationLogEntry
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.stream_result_of_application_log_entry import StreamResultOfApplicationLogEntry
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -1919,7 +1919,7 @@ with openapi_client.ApiClient() as api_client:
         # PodLogs returns stream of log entries for the specified pod. Pod
         api_response = api_instance.application_service_pod_logs(name, pod_name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_pod_logs: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -1928,7 +1928,7 @@ with openapi_client.ApiClient() as api_client:
         # PodLogs returns stream of log entries for the specified pod. Pod
         api_response = api_instance.application_service_pod_logs(name, pod_name, namespace=namespace, container=container, since_seconds=since_seconds, since_time_seconds=since_time_seconds, since_time_nanos=since_time_nanos, tail_lines=tail_lines, follow=follow, until_time=until_time, filter=filter, kind=kind, group=group, resource_name=resource_name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_pod_logs: %s\n" % e)
 ```
 
@@ -1983,20 +1983,20 @@ PodLogs returns stream of log entries for the specified pod. Pod
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.stream_result_of_application_log_entry import StreamResultOfApplicationLogEntry
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.stream_result_of_application_log_entry import StreamResultOfApplicationLogEntry
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -2019,7 +2019,7 @@ with openapi_client.ApiClient() as api_client:
         # PodLogs returns stream of log entries for the specified pod. Pod
         api_response = api_instance.application_service_pod_logs2(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_pod_logs2: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -2028,7 +2028,7 @@ with openapi_client.ApiClient() as api_client:
         # PodLogs returns stream of log entries for the specified pod. Pod
         api_response = api_instance.application_service_pod_logs2(name, namespace=namespace, pod_name=pod_name, container=container, since_seconds=since_seconds, since_time_seconds=since_time_seconds, since_time_nanos=since_time_nanos, tail_lines=tail_lines, follow=follow, until_time=until_time, filter=filter, kind=kind, group=group, resource_name=resource_name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_pod_logs2: %s\n" % e)
 ```
 
@@ -2083,20 +2083,20 @@ ResourceTree returns resource tree
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_application_tree import V1alpha1ApplicationTree
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.v1alpha1_application_tree import V1alpha1ApplicationTree
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     application_name = "applicationName_example" # str | 
@@ -2111,7 +2111,7 @@ with openapi_client.ApiClient() as api_client:
         # ResourceTree returns resource tree
         api_response = api_instance.application_service_resource_tree(application_name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_resource_tree: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -2120,7 +2120,7 @@ with openapi_client.ApiClient() as api_client:
         # ResourceTree returns resource tree
         api_response = api_instance.application_service_resource_tree(application_name, namespace=namespace, name=name, version=version, group=group, kind=kind)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_resource_tree: %s\n" % e)
 ```
 
@@ -2167,20 +2167,20 @@ Get the meta-data (author, date, tags, message) for a specific revision of the a
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1alpha1_revision_metadata import V1alpha1RevisionMetadata
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.v1alpha1_revision_metadata import V1alpha1RevisionMetadata
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | the application's name
@@ -2191,7 +2191,7 @@ with openapi_client.ApiClient() as api_client:
         # Get the meta-data (author, date, tags, message) for a specific revision of the application
         api_response = api_instance.application_service_revision_metadata(name, revision)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_revision_metadata: %s\n" % e)
 ```
 
@@ -2234,21 +2234,21 @@ Rollback syncs an application to its target state
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.application_application_rollback_request import ApplicationApplicationRollbackRequest
-from openapi_client.model.v1alpha1_application import V1alpha1Application
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.application_application_rollback_request import ApplicationApplicationRollbackRequest
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -2264,7 +2264,7 @@ with openapi_client.ApiClient() as api_client:
         # Rollback syncs an application to its target state
         api_response = api_instance.application_service_rollback(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_rollback: %s\n" % e)
 ```
 
@@ -2307,19 +2307,19 @@ RunResourceAction run resource action
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -2335,7 +2335,7 @@ with openapi_client.ApiClient() as api_client:
         # RunResourceAction run resource action
         api_response = api_instance.application_service_run_resource_action(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_run_resource_action: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -2344,7 +2344,7 @@ with openapi_client.ApiClient() as api_client:
         # RunResourceAction run resource action
         api_response = api_instance.application_service_run_resource_action(name, body, namespace=namespace, resource_name=resource_name, version=version, group=group, kind=kind)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_run_resource_action: %s\n" % e)
 ```
 
@@ -2392,21 +2392,21 @@ Sync syncs an application to its target state
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1alpha1_application import V1alpha1Application
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.application_application_sync_request import ApplicationApplicationSyncRequest
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
+from argocd_python_client.model.application_application_sync_request import ApplicationApplicationSyncRequest
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -2462,7 +2462,7 @@ with openapi_client.ApiClient() as api_client:
         # Sync syncs an application to its target state
         api_response = api_instance.application_service_sync(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_sync: %s\n" % e)
 ```
 
@@ -2505,19 +2505,19 @@ TerminateOperation terminates the currently running operation
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -2527,7 +2527,7 @@ with openapi_client.ApiClient() as api_client:
         # TerminateOperation terminates the currently running operation
         api_response = api_instance.application_service_terminate_operation(name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_terminate_operation: %s\n" % e)
 ```
 
@@ -2569,20 +2569,20 @@ Update updates an application
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.v1alpha1_application import V1alpha1Application
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     application_metadata_name = "application.metadata.name_example" # str | Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names +optional
@@ -3398,7 +3398,7 @@ with openapi_client.ApiClient() as api_client:
         # Update updates an application
         api_response = api_instance.application_service_update(application_metadata_name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_update: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -3407,7 +3407,7 @@ with openapi_client.ApiClient() as api_client:
         # Update updates an application
         api_response = api_instance.application_service_update(application_metadata_name, body, validate=validate)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_update: %s\n" % e)
 ```
 
@@ -3451,20 +3451,20 @@ UpdateSpec updates an application spec
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_application_spec import V1alpha1ApplicationSpec
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.v1alpha1_application_spec import V1alpha1ApplicationSpec
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | 
@@ -3603,7 +3603,7 @@ with openapi_client.ApiClient() as api_client:
         # UpdateSpec updates an application spec
         api_response = api_instance.application_service_update_spec(name, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_update_spec: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -3612,7 +3612,7 @@ with openapi_client.ApiClient() as api_client:
         # UpdateSpec updates an application spec
         api_response = api_instance.application_service_update_spec(name, body, validate=validate)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_update_spec: %s\n" % e)
 ```
 
@@ -3656,20 +3656,20 @@ Watch returns stream of application change events
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.stream_result_of_v1alpha1_application_watch_event import StreamResultOfV1alpha1ApplicationWatchEvent
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.stream_result_of_v1alpha1_application_watch_event import StreamResultOfV1alpha1ApplicationWatchEvent
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     name = "name_example" # str | the application's name. (optional)
@@ -3687,7 +3687,7 @@ with openapi_client.ApiClient() as api_client:
         # Watch returns stream of application change events
         api_response = api_instance.application_service_watch(name=name, refresh=refresh, project=project, resource_version=resource_version, selector=selector, repo=repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_watch: %s\n" % e)
 ```
 
@@ -3734,20 +3734,20 @@ Watch returns stream of application resource tree
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import application_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.stream_result_of_v1alpha1_application_tree import StreamResultOfV1alpha1ApplicationTree
+import argocd_python_client
+from argocd_python_client.api import application_service_api
+from argocd_python_client.model.stream_result_of_v1alpha1_application_tree import StreamResultOfV1alpha1ApplicationTree
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = application_service_api.ApplicationServiceApi(api_client)
     application_name = "applicationName_example" # str | 
@@ -3762,7 +3762,7 @@ with openapi_client.ApiClient() as api_client:
         # Watch returns stream of application resource tree
         api_response = api_instance.application_service_watch_resource_tree(application_name)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_watch_resource_tree: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -3771,7 +3771,7 @@ with openapi_client.ApiClient() as api_client:
         # Watch returns stream of application resource tree
         api_response = api_instance.application_service_watch_resource_tree(application_name, namespace=namespace, name=name, version=version, group=group, kind=kind)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling ApplicationServiceApi->application_service_watch_resource_tree: %s\n" % e)
 ```
 

@@ -1,4 +1,4 @@
-# openapi_client.CertificateServiceApi
+# argocd_python_client.CertificateServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -18,20 +18,20 @@ Creates repository certificates on the server
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import certificate_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+import argocd_python_client
+from argocd_python_client.api import certificate_service_api
+from argocd_python_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = certificate_service_api.CertificateServiceApi(api_client)
     body = V1alpha1RepositoryCertificateList(
@@ -58,7 +58,7 @@ with openapi_client.ApiClient() as api_client:
         # Creates repository certificates on the server
         api_response = api_instance.certificate_service_create_certificate(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling CertificateServiceApi->certificate_service_create_certificate: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -67,7 +67,7 @@ with openapi_client.ApiClient() as api_client:
         # Creates repository certificates on the server
         api_response = api_instance.certificate_service_create_certificate(body, upsert=upsert)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling CertificateServiceApi->certificate_service_create_certificate: %s\n" % e)
 ```
 
@@ -110,20 +110,20 @@ Delete the certificates that match the RepositoryCertificateQuery
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import certificate_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+import argocd_python_client
+from argocd_python_client.api import certificate_service_api
+from argocd_python_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = certificate_service_api.CertificateServiceApi(api_client)
     host_name_pattern = "hostNamePattern_example" # str | A file-glob pattern (not regular expression) the host name has to match. (optional)
@@ -136,7 +136,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete the certificates that match the RepositoryCertificateQuery
         api_response = api_instance.certificate_service_delete_certificate(host_name_pattern=host_name_pattern, cert_type=cert_type, cert_sub_type=cert_sub_type)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling CertificateServiceApi->certificate_service_delete_certificate: %s\n" % e)
 ```
 
@@ -180,20 +180,20 @@ List all available repository certificates
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import certificate_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+import argocd_python_client
+from argocd_python_client.api import certificate_service_api
+from argocd_python_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = certificate_service_api.CertificateServiceApi(api_client)
     host_name_pattern = "hostNamePattern_example" # str | A file-glob pattern (not regular expression) the host name has to match. (optional)
@@ -206,7 +206,7 @@ with openapi_client.ApiClient() as api_client:
         # List all available repository certificates
         api_response = api_instance.certificate_service_list_certificates(host_name_pattern=host_name_pattern, cert_type=cert_type, cert_sub_type=cert_sub_type)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling CertificateServiceApi->certificate_service_list_certificates: %s\n" % e)
 ```
 

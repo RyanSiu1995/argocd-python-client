@@ -1,4 +1,4 @@
-# openapi_client.RepositoryServiceApi
+# argocd_python_client.RepositoryServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -25,20 +25,20 @@ CreateRepository creates a new repository configuration
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository import V1alpha1Repository
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.v1alpha1_repository import V1alpha1Repository
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     body = V1alpha1Repository(
@@ -76,7 +76,7 @@ with openapi_client.ApiClient() as api_client:
         # CreateRepository creates a new repository configuration
         api_response = api_instance.repository_service_create_repository(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_create_repository: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -85,7 +85,7 @@ with openapi_client.ApiClient() as api_client:
         # CreateRepository creates a new repository configuration
         api_response = api_instance.repository_service_create_repository(body, upsert=upsert, creds_only=creds_only)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_create_repository: %s\n" % e)
 ```
 
@@ -129,19 +129,19 @@ DeleteRepository deletes a repository from the configuration
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | Repo URL for query
@@ -152,7 +152,7 @@ with openapi_client.ApiClient() as api_client:
         # DeleteRepository deletes a repository from the configuration
         api_response = api_instance.repository_service_delete_repository(repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_delete_repository: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -161,7 +161,7 @@ with openapi_client.ApiClient() as api_client:
         # DeleteRepository deletes a repository from the configuration
         api_response = api_instance.repository_service_delete_repository(repo, force_refresh=force_refresh)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_delete_repository: %s\n" % e)
 ```
 
@@ -204,20 +204,20 @@ Get returns a repository or its credentials
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository import V1alpha1Repository
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.v1alpha1_repository import V1alpha1Repository
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | Repo URL for query
@@ -228,7 +228,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns a repository or its credentials
         api_response = api_instance.repository_service_get(repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_get: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -237,7 +237,7 @@ with openapi_client.ApiClient() as api_client:
         # Get returns a repository or its credentials
         api_response = api_instance.repository_service_get(repo, force_refresh=force_refresh)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_get: %s\n" % e)
 ```
 
@@ -280,21 +280,21 @@ GetAppDetails returns application details by given path
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.repository_repo_app_details_response import RepositoryRepoAppDetailsResponse
-from openapi_client.model.repository_repo_app_details_query import RepositoryRepoAppDetailsQuery
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.repository_repo_app_details_query import RepositoryRepoAppDetailsQuery
+from argocd_python_client.model.repository_repo_app_details_response import RepositoryRepoAppDetailsResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     source_repo_url = "source.repoURL_example" # str | RepoURL is the URL to the repository (Git or Helm) that contains the application manifests
@@ -391,7 +391,7 @@ with openapi_client.ApiClient() as api_client:
         # GetAppDetails returns application details by given path
         api_response = api_instance.repository_service_get_app_details(source_repo_url, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_get_app_details: %s\n" % e)
 ```
 
@@ -434,20 +434,20 @@ GetHelmCharts returns list of helm charts in the specified repository
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.repository_helm_charts_response import RepositoryHelmChartsResponse
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.repository_helm_charts_response import RepositoryHelmChartsResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | Repo URL for query
@@ -458,7 +458,7 @@ with openapi_client.ApiClient() as api_client:
         # GetHelmCharts returns list of helm charts in the specified repository
         api_response = api_instance.repository_service_get_helm_charts(repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_get_helm_charts: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -467,7 +467,7 @@ with openapi_client.ApiClient() as api_client:
         # GetHelmCharts returns list of helm charts in the specified repository
         api_response = api_instance.repository_service_get_helm_charts(repo, force_refresh=force_refresh)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_get_helm_charts: %s\n" % e)
 ```
 
@@ -510,20 +510,20 @@ ListApps returns list of apps in the repe
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.repository_repo_apps_response import RepositoryRepoAppsResponse
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.repository_repo_apps_response import RepositoryRepoAppsResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | 
@@ -534,7 +534,7 @@ with openapi_client.ApiClient() as api_client:
         # ListApps returns list of apps in the repe
         api_response = api_instance.repository_service_list_apps(repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_list_apps: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -543,7 +543,7 @@ with openapi_client.ApiClient() as api_client:
         # ListApps returns list of apps in the repe
         api_response = api_instance.repository_service_list_apps(repo, revision=revision)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_list_apps: %s\n" % e)
 ```
 
@@ -586,20 +586,20 @@ No authorization required
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.repository_refs import RepositoryRefs
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.repository_refs import RepositoryRefs
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | Repo URL for query
@@ -609,7 +609,7 @@ with openapi_client.ApiClient() as api_client:
     try:
         api_response = api_instance.repository_service_list_refs(repo)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_list_refs: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -617,7 +617,7 @@ with openapi_client.ApiClient() as api_client:
     try:
         api_response = api_instance.repository_service_list_refs(repo, force_refresh=force_refresh)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_list_refs: %s\n" % e)
 ```
 
@@ -660,20 +660,20 @@ ListRepositories gets a list of all configured repositories
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository_list import V1alpha1RepositoryList
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.v1alpha1_repository_list import V1alpha1RepositoryList
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | Repo URL for query. (optional)
@@ -685,7 +685,7 @@ with openapi_client.ApiClient() as api_client:
         # ListRepositories gets a list of all configured repositories
         api_response = api_instance.repository_service_list_repositories(repo=repo, force_refresh=force_refresh)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_list_repositories: %s\n" % e)
 ```
 
@@ -728,20 +728,20 @@ UpdateRepository updates a repository configuration
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.v1alpha1_repository import V1alpha1Repository
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.v1alpha1_repository import V1alpha1Repository
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo_repo = "repo.repo_example" # str | Repo contains the URL to the remote repository
@@ -778,7 +778,7 @@ with openapi_client.ApiClient() as api_client:
         # UpdateRepository updates a repository configuration
         api_response = api_instance.repository_service_update_repository(repo_repo, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_update_repository: %s\n" % e)
 ```
 
@@ -821,19 +821,19 @@ ValidateAccess validates access to a repository with given parameters
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import repository_service_api
-from openapi_client.model.runtime_error import RuntimeError
+import argocd_python_client
+from argocd_python_client.api import repository_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     repo = "repo_example" # str | The URL to the repo
@@ -857,7 +857,7 @@ with openapi_client.ApiClient() as api_client:
         # ValidateAccess validates access to a repository with given parameters
         api_response = api_instance.repository_service_validate_access(repo, body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_validate_access: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -866,7 +866,7 @@ with openapi_client.ApiClient() as api_client:
         # ValidateAccess validates access to a repository with given parameters
         api_response = api_instance.repository_service_validate_access(repo, body, username=username, password=password, ssh_private_key=ssh_private_key, insecure=insecure, tls_client_cert_data=tls_client_cert_data, tls_client_cert_key=tls_client_cert_key, type=type, name=name, enable_oci=enable_oci, github_app_private_key=github_app_private_key, github_app_id=github_app_id, github_app_installation_id=github_app_installation_id, github_app_enterprise_base_url=github_app_enterprise_base_url)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling RepositoryServiceApi->repository_service_validate_access: %s\n" % e)
 ```
 

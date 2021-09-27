@@ -1,4 +1,4 @@
-# openapi_client.VersionServiceApi
+# argocd_python_client.VersionServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -16,20 +16,20 @@ Version returns version information of the API server
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import version_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.version_version_message import VersionVersionMessage
+import argocd_python_client
+from argocd_python_client.api import version_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.version_version_message import VersionVersionMessage
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = version_service_api.VersionServiceApi(api_client)
 
@@ -38,7 +38,7 @@ with openapi_client.ApiClient() as api_client:
         # Version returns version information of the API server
         api_response = api_instance.version_service_version()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling VersionServiceApi->version_service_version: %s\n" % e)
 ```
 

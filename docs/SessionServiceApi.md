@@ -1,4 +1,4 @@
-# openapi_client.SessionServiceApi
+# argocd_python_client.SessionServiceApi
 
 All URIs are relative to *http://localhost*
 
@@ -18,21 +18,21 @@ Create a new JWT for authentication and set a cookie if using HTTP
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import session_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.session_session_create_request import SessionSessionCreateRequest
-from openapi_client.model.session_session_response import SessionSessionResponse
+import argocd_python_client
+from argocd_python_client.api import session_service_api
+from argocd_python_client.model.session_session_response import SessionSessionResponse
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.session_session_create_request import SessionSessionCreateRequest
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = session_service_api.SessionServiceApi(api_client)
     body = SessionSessionCreateRequest(
@@ -46,7 +46,7 @@ with openapi_client.ApiClient() as api_client:
         # Create a new JWT for authentication and set a cookie if using HTTP
         api_response = api_instance.session_service_create(body)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling SessionServiceApi->session_service_create: %s\n" % e)
 ```
 
@@ -88,20 +88,20 @@ Delete an existing JWT cookie if using HTTP
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import session_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.session_session_response import SessionSessionResponse
+import argocd_python_client
+from argocd_python_client.api import session_service_api
+from argocd_python_client.model.session_session_response import SessionSessionResponse
+from argocd_python_client.model.runtime_error import RuntimeError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = session_service_api.SessionServiceApi(api_client)
 
@@ -110,7 +110,7 @@ with openapi_client.ApiClient() as api_client:
         # Delete an existing JWT cookie if using HTTP
         api_response = api_instance.session_service_delete()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling SessionServiceApi->session_service_delete: %s\n" % e)
 ```
 
@@ -149,20 +149,20 @@ Get the current user's info
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import session_service_api
-from openapi_client.model.runtime_error import RuntimeError
-from openapi_client.model.session_get_user_info_response import SessionGetUserInfoResponse
+import argocd_python_client
+from argocd_python_client.api import session_service_api
+from argocd_python_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.session_get_user_info_response import SessionGetUserInfoResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = argocd_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with argocd_python_client.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = session_service_api.SessionServiceApi(api_client)
 
@@ -171,7 +171,7 @@ with openapi_client.ApiClient() as api_client:
         # Get the current user's info
         api_response = api_instance.session_service_get_user_info()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except argocd_python_client.ApiException as e:
         print("Exception when calling SessionServiceApi->session_service_get_user_info: %s\n" % e)
 ```
 
