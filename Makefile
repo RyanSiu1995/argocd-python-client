@@ -3,6 +3,7 @@ generate:
 	@openapi-generator generate -i swagger.json -g python \
 		--git-host github.com --git-repo-id argocd-python-client \
 		--git-user-id RyanSiu1995 -o ./ \
+		--additional-properties packageVersion=1.0.1 \
 		--package-name argocd_python_client
 
 .PHONY: test
