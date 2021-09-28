@@ -31,9 +31,7 @@ from argocd_python_client.exceptions import ApiAttributeError
 
 def lazy_import():
     from argocd_python_client.model.v1_fields_v1 import V1FieldsV1
-    from argocd_python_client.model.v1_time import V1Time
     globals()['V1FieldsV1'] = V1FieldsV1
-    globals()['V1Time'] = V1Time
 
 
 class V1ManagedFieldsEntry(ModelNormal):
@@ -94,7 +92,7 @@ class V1ManagedFieldsEntry(ModelNormal):
             'fields_v1': (V1FieldsV1,),  # noqa: E501
             'manager': (str,),  # noqa: E501
             'operation': (str,),  # noqa: E501
-            'time': (V1Time,),  # noqa: E501
+            'time': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -157,7 +155,7 @@ class V1ManagedFieldsEntry(ModelNormal):
             fields_v1 (V1FieldsV1): [optional]  # noqa: E501
             manager (str): Manager is an identifier of the workflow managing these fields.. [optional]  # noqa: E501
             operation (str): Operation is the type of operation which lead to this ManagedFieldsEntry being created. The only valid values for this field are 'Apply' and 'Update'.. [optional]  # noqa: E501
-            time (V1Time): [optional]  # noqa: E501
+            time (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -244,7 +242,7 @@ class V1ManagedFieldsEntry(ModelNormal):
             fields_v1 (V1FieldsV1): [optional]  # noqa: E501
             manager (str): Manager is an identifier of the workflow managing these fields.. [optional]  # noqa: E501
             operation (str): Operation is the type of operation which lead to this ManagedFieldsEntry being created. The only valid values for this field are 'Apply' and 'Update'.. [optional]  # noqa: E501
-            time (V1Time): [optional]  # noqa: E501
+            time (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

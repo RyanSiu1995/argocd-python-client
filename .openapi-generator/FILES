@@ -90,7 +90,6 @@ argocd_python_client/model/v1_object_meta.py
 argocd_python_client/model/v1_object_reference.py
 argocd_python_client/model/v1_owner_reference.py
 argocd_python_client/model/v1_port_status.py
-argocd_python_client/model/v1_time.py
 argocd_python_client/model/v1alpha1_app_project.py
 argocd_python_client/model/v1alpha1_app_project_list.py
 argocd_python_client/model/v1alpha1_app_project_spec.py
@@ -260,7 +259,6 @@ docs/V1ObjectMeta.md
 docs/V1ObjectReference.md
 docs/V1OwnerReference.md
 docs/V1PortStatus.md
-docs/V1Time.md
 docs/V1alpha1AWSAuthConfig.md
 docs/V1alpha1AppProject.md
 docs/V1alpha1AppProjectList.md

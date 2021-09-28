@@ -62,20 +62,13 @@ with argocd_python_client.ApiClient() as api_client:
                 "key": "key_example",
             },
             cluster_name="cluster_name_example",
-            creation_timestamp=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            creation_timestamp="creation_timestamp_example",
             deletion_grace_period_seconds="deletion_grace_period_seconds_example",
-            deletion_timestamp=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            deletion_timestamp="deletion_timestamp_example",
             finalizers=[
                 "finalizers_example",
             ],
             generate_name="generate_name_example",
-            generation="generation_example",
             labels={
                 "key": "key_example",
             },
@@ -88,10 +81,7 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                     manager="manager_example",
                     operation="operation_example",
-                    time=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
+                    time="time_example",
                 ),
             ],
             name="name_example",
@@ -127,7 +117,6 @@ with argocd_python_client.ApiClient() as api_client:
                     factor="factor_example",
                     max_duration="max_duration_example",
                 ),
-                limit="limit_example",
             ),
             sync=V1alpha1SyncOperation(
                 dry_run=True,
@@ -364,7 +353,6 @@ with argocd_python_client.ApiClient() as api_client:
                         factor="factor_example",
                         max_duration="max_duration_example",
                     ),
-                    limit="limit_example",
                 ),
                 sync_options=[
                     "sync_options_example",
@@ -374,10 +362,7 @@ with argocd_python_client.ApiClient() as api_client:
         status=V1alpha1ApplicationStatus(
             conditions=[
                 V1alpha1ApplicationCondition(
-                    last_transition_time=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
+                    last_transition_time="last_transition_time_example",
                     message="message_example",
                     type="type_example",
                 ),
@@ -388,14 +373,8 @@ with argocd_python_client.ApiClient() as api_client:
             ),
             history=[
                 V1alpha1RevisionHistory(
-                    deploy_started_at=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
-                    deployed_at=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
+                    deploy_started_at="deploy_started_at_example",
+                    deployed_at="deployed_at_example",
                     id="id_example",
                     revision="revision_example",
                     source=V1alpha1ApplicationSource(
@@ -484,15 +463,9 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                 ),
             ],
-            observed_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            observed_at="observed_at_example",
             operation_state=V1alpha1OperationState(
-                finished_at=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                finished_at="finished_at_example",
                 message="message_example",
                 operation=V1alpha1Operation(
                     info=[
@@ -511,7 +484,6 @@ with argocd_python_client.ApiClient() as api_client:
                             factor="factor_example",
                             max_duration="max_duration_example",
                         ),
-                        limit="limit_example",
                     ),
                     sync=V1alpha1SyncOperation(
                         dry_run=True,
@@ -629,10 +601,7 @@ with argocd_python_client.ApiClient() as api_client:
                 ),
                 phase="phase_example",
                 retry_count="retry_count_example",
-                started_at=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                started_at="started_at_example",
                 sync_result=V1alpha1SyncOperationResult(
                     resources=[
                         V1alpha1ResourceResult(
@@ -735,10 +704,7 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                 ),
             ),
-            reconciled_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            reconciled_at="reconciled_at_example",
             resources=[
                 V1alpha1ResourceStatus(
                     group="group_example",
@@ -2437,7 +2403,6 @@ with argocd_python_client.ApiClient() as api_client:
                 factor="factor_example",
                 max_duration="max_duration_example",
             ),
-            limit="limit_example",
         ),
         revision="revision_example",
         strategy=V1alpha1SyncStrategy(
@@ -2592,20 +2557,13 @@ with argocd_python_client.ApiClient() as api_client:
                 "key": "key_example",
             },
             cluster_name="cluster_name_example",
-            creation_timestamp=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            creation_timestamp="creation_timestamp_example",
             deletion_grace_period_seconds="deletion_grace_period_seconds_example",
-            deletion_timestamp=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            deletion_timestamp="deletion_timestamp_example",
             finalizers=[
                 "finalizers_example",
             ],
             generate_name="generate_name_example",
-            generation="generation_example",
             labels={
                 "key": "key_example",
             },
@@ -2618,10 +2576,7 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                     manager="manager_example",
                     operation="operation_example",
-                    time=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
+                    time="time_example",
                 ),
             ],
             name="name_example",
@@ -2657,7 +2612,6 @@ with argocd_python_client.ApiClient() as api_client:
                     factor="factor_example",
                     max_duration="max_duration_example",
                 ),
-                limit="limit_example",
             ),
             sync=V1alpha1SyncOperation(
                 dry_run=True,
@@ -2894,7 +2848,6 @@ with argocd_python_client.ApiClient() as api_client:
                         factor="factor_example",
                         max_duration="max_duration_example",
                     ),
-                    limit="limit_example",
                 ),
                 sync_options=[
                     "sync_options_example",
@@ -2904,10 +2857,7 @@ with argocd_python_client.ApiClient() as api_client:
         status=V1alpha1ApplicationStatus(
             conditions=[
                 V1alpha1ApplicationCondition(
-                    last_transition_time=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
+                    last_transition_time="last_transition_time_example",
                     message="message_example",
                     type="type_example",
                 ),
@@ -2918,14 +2868,8 @@ with argocd_python_client.ApiClient() as api_client:
             ),
             history=[
                 V1alpha1RevisionHistory(
-                    deploy_started_at=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
-                    deployed_at=V1Time(
-                        nanos=1,
-                        seconds="seconds_example",
-                    ),
+                    deploy_started_at="deploy_started_at_example",
+                    deployed_at="deployed_at_example",
                     id="id_example",
                     revision="revision_example",
                     source=V1alpha1ApplicationSource(
@@ -3014,15 +2958,9 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                 ),
             ],
-            observed_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            observed_at="observed_at_example",
             operation_state=V1alpha1OperationState(
-                finished_at=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                finished_at="finished_at_example",
                 message="message_example",
                 operation=V1alpha1Operation(
                     info=[
@@ -3041,7 +2979,6 @@ with argocd_python_client.ApiClient() as api_client:
                             factor="factor_example",
                             max_duration="max_duration_example",
                         ),
-                        limit="limit_example",
                     ),
                     sync=V1alpha1SyncOperation(
                         dry_run=True,
@@ -3159,10 +3096,7 @@ with argocd_python_client.ApiClient() as api_client:
                 ),
                 phase="phase_example",
                 retry_count="retry_count_example",
-                started_at=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                started_at="started_at_example",
                 sync_result=V1alpha1SyncOperationResult(
                     resources=[
                         V1alpha1ResourceResult(
@@ -3265,10 +3199,7 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                 ),
             ),
-            reconciled_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            reconciled_at="reconciled_at_example",
             resources=[
                 V1alpha1ResourceStatus(
                     group="group_example",
@@ -3589,7 +3520,6 @@ with argocd_python_client.ApiClient() as api_client:
                     factor="factor_example",
                     max_duration="max_duration_example",
                 ),
-                limit="limit_example",
             ),
             sync_options=[
                 "sync_options_example",

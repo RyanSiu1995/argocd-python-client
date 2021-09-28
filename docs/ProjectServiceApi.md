@@ -49,20 +49,13 @@ with argocd_python_client.ApiClient() as api_client:
                     "key": "key_example",
                 },
                 cluster_name="cluster_name_example",
-                creation_timestamp=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                creation_timestamp="creation_timestamp_example",
                 deletion_grace_period_seconds="deletion_grace_period_seconds_example",
-                deletion_timestamp=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                deletion_timestamp="deletion_timestamp_example",
                 finalizers=[
                     "finalizers_example",
                 ],
                 generate_name="generate_name_example",
-                generation="generation_example",
                 labels={
                     "key": "key_example",
                 },
@@ -75,10 +68,7 @@ with argocd_python_client.ApiClient() as api_client:
                         ),
                         manager="manager_example",
                         operation="operation_example",
-                        time=V1Time(
-                            nanos=1,
-                            seconds="seconds_example",
-                        ),
+                        time="time_example",
                     ),
                 ],
                 name="name_example",
@@ -819,20 +809,13 @@ with argocd_python_client.ApiClient() as api_client:
                     "key": "key_example",
                 },
                 cluster_name="cluster_name_example",
-                creation_timestamp=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                creation_timestamp="creation_timestamp_example",
                 deletion_grace_period_seconds="deletion_grace_period_seconds_example",
-                deletion_timestamp=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                deletion_timestamp="deletion_timestamp_example",
                 finalizers=[
                     "finalizers_example",
                 ],
                 generate_name="generate_name_example",
-                generation="generation_example",
                 labels={
                     "key": "key_example",
                 },
@@ -845,10 +828,7 @@ with argocd_python_client.ApiClient() as api_client:
                         ),
                         manager="manager_example",
                         operation="operation_example",
-                        time=V1Time(
-                            nanos=1,
-                            seconds="seconds_example",
-                        ),
+                        time="time_example",
                     ),
                 ],
                 name="name_example",

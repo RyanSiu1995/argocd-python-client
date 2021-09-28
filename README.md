@@ -235,7 +235,6 @@ Class | Method | HTTP request | Description
  - [V1ObjectReference](docs/V1ObjectReference.md)
  - [V1OwnerReference](docs/V1OwnerReference.md)
  - [V1PortStatus](docs/V1PortStatus.md)
- - [V1Time](docs/V1Time.md)
  - [V1alpha1AWSAuthConfig](docs/V1alpha1AWSAuthConfig.md)
  - [V1alpha1AppProject](docs/V1alpha1AppProject.md)
  - [V1alpha1AppProjectList](docs/V1alpha1AppProjectList.md)

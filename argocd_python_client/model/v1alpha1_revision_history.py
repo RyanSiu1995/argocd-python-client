@@ -30,9 +30,7 @@ from argocd_python_client.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from argocd_python_client.model.v1_time import V1Time
     from argocd_python_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
-    globals()['V1Time'] = V1Time
     globals()['V1alpha1ApplicationSource'] = V1alpha1ApplicationSource
 
 
@@ -89,8 +87,8 @@ class V1alpha1RevisionHistory(ModelNormal):
         """
         lazy_import()
         return {
-            'deploy_started_at': (V1Time,),  # noqa: E501
-            'deployed_at': (V1Time,),  # noqa: E501
+            'deploy_started_at': (str,),  # noqa: E501
+            'deployed_at': (str,),  # noqa: E501
             'id': (str,),  # noqa: E501
             'revision': (str,),  # noqa: E501
             'source': (V1alpha1ApplicationSource,),  # noqa: E501
@@ -150,8 +148,8 @@ class V1alpha1RevisionHistory(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            deploy_started_at (V1Time): [optional]  # noqa: E501
-            deployed_at (V1Time): [optional]  # noqa: E501
+            deploy_started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
+            deployed_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             id (str): [optional]  # noqa: E501
             revision (str): [optional]  # noqa: E501
             source (V1alpha1ApplicationSource): [optional]  # noqa: E501
@@ -236,8 +234,8 @@ class V1alpha1RevisionHistory(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            deploy_started_at (V1Time): [optional]  # noqa: E501
-            deployed_at (V1Time): [optional]  # noqa: E501
+            deploy_started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
+            deployed_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             id (str): [optional]  # noqa: E501
             revision (str): [optional]  # noqa: E501
             source (V1alpha1ApplicationSource): [optional]  # noqa: E501

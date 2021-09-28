@@ -30,10 +30,8 @@ from argocd_python_client.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from argocd_python_client.model.v1_time import V1Time
     from argocd_python_client.model.v1alpha1_operation import V1alpha1Operation
     from argocd_python_client.model.v1alpha1_sync_operation_result import V1alpha1SyncOperationResult
-    globals()['V1Time'] = V1Time
     globals()['V1alpha1Operation'] = V1alpha1Operation
     globals()['V1alpha1SyncOperationResult'] = V1alpha1SyncOperationResult
 
@@ -91,12 +89,12 @@ class V1alpha1OperationState(ModelNormal):
         """
         lazy_import()
         return {
-            'finished_at': (V1Time,),  # noqa: E501
+            'finished_at': (str,),  # noqa: E501
             'message': (str,),  # noqa: E501
             'operation': (V1alpha1Operation,),  # noqa: E501
             'phase': (str,),  # noqa: E501
             'retry_count': (str,),  # noqa: E501
-            'started_at': (V1Time,),  # noqa: E501
+            'started_at': (str,),  # noqa: E501
             'sync_result': (V1alpha1SyncOperationResult,),  # noqa: E501
         }
 
@@ -156,12 +154,12 @@ class V1alpha1OperationState(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            finished_at (V1Time): [optional]  # noqa: E501
+            finished_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             message (str): Message holds any pertinent messages when attempting to perform operation (typically errors).. [optional]  # noqa: E501
             operation (V1alpha1Operation): [optional]  # noqa: E501
             phase (str): [optional]  # noqa: E501
             retry_count (str): [optional]  # noqa: E501
-            started_at (V1Time): [optional]  # noqa: E501
+            started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             sync_result (V1alpha1SyncOperationResult): [optional]  # noqa: E501
         """
 
@@ -244,12 +242,12 @@ class V1alpha1OperationState(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            finished_at (V1Time): [optional]  # noqa: E501
+            finished_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             message (str): Message holds any pertinent messages when attempting to perform operation (typically errors).. [optional]  # noqa: E501
             operation (V1alpha1Operation): [optional]  # noqa: E501
             phase (str): [optional]  # noqa: E501
             retry_count (str): [optional]  # noqa: E501
-            started_at (V1Time): [optional]  # noqa: E501
+            started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             sync_result (V1alpha1SyncOperationResult): [optional]  # noqa: E501
         """
 

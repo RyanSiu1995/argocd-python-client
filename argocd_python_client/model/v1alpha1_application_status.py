@@ -30,7 +30,6 @@ from argocd_python_client.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from argocd_python_client.model.v1_time import V1Time
     from argocd_python_client.model.v1alpha1_application_condition import V1alpha1ApplicationCondition
     from argocd_python_client.model.v1alpha1_application_summary import V1alpha1ApplicationSummary
     from argocd_python_client.model.v1alpha1_health_status import V1alpha1HealthStatus
@@ -38,7 +37,6 @@ def lazy_import():
     from argocd_python_client.model.v1alpha1_resource_status import V1alpha1ResourceStatus
     from argocd_python_client.model.v1alpha1_revision_history import V1alpha1RevisionHistory
     from argocd_python_client.model.v1alpha1_sync_status import V1alpha1SyncStatus
-    globals()['V1Time'] = V1Time
     globals()['V1alpha1ApplicationCondition'] = V1alpha1ApplicationCondition
     globals()['V1alpha1ApplicationSummary'] = V1alpha1ApplicationSummary
     globals()['V1alpha1HealthStatus'] = V1alpha1HealthStatus
@@ -104,9 +102,9 @@ class V1alpha1ApplicationStatus(ModelNormal):
             'conditions': ([V1alpha1ApplicationCondition],),  # noqa: E501
             'health': (V1alpha1HealthStatus,),  # noqa: E501
             'history': ([V1alpha1RevisionHistory],),  # noqa: E501
-            'observed_at': (V1Time,),  # noqa: E501
+            'observed_at': (str,),  # noqa: E501
             'operation_state': (V1alpha1OperationState,),  # noqa: E501
-            'reconciled_at': (V1Time,),  # noqa: E501
+            'reconciled_at': (str,),  # noqa: E501
             'resources': ([V1alpha1ResourceStatus],),  # noqa: E501
             'source_type': (str,),  # noqa: E501
             'summary': (V1alpha1ApplicationSummary,),  # noqa: E501
@@ -175,9 +173,9 @@ class V1alpha1ApplicationStatus(ModelNormal):
             conditions ([V1alpha1ApplicationCondition]): [optional]  # noqa: E501
             health (V1alpha1HealthStatus): [optional]  # noqa: E501
             history ([V1alpha1RevisionHistory]): [optional]  # noqa: E501
-            observed_at (V1Time): [optional]  # noqa: E501
+            observed_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             operation_state (V1alpha1OperationState): [optional]  # noqa: E501
-            reconciled_at (V1Time): [optional]  # noqa: E501
+            reconciled_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             resources ([V1alpha1ResourceStatus]): [optional]  # noqa: E501
             source_type (str): [optional]  # noqa: E501
             summary (V1alpha1ApplicationSummary): [optional]  # noqa: E501
@@ -266,9 +264,9 @@ class V1alpha1ApplicationStatus(ModelNormal):
             conditions ([V1alpha1ApplicationCondition]): [optional]  # noqa: E501
             health (V1alpha1HealthStatus): [optional]  # noqa: E501
             history ([V1alpha1RevisionHistory]): [optional]  # noqa: E501
-            observed_at (V1Time): [optional]  # noqa: E501
+            observed_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             operation_state (V1alpha1OperationState): [optional]  # noqa: E501
-            reconciled_at (V1Time): [optional]  # noqa: E501
+            reconciled_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             resources ([V1alpha1ResourceStatus]): [optional]  # noqa: E501
             source_type (str): [optional]  # noqa: E501
             summary (V1alpha1ApplicationSummary): [optional]  # noqa: E501

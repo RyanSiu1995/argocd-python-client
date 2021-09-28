@@ -35,13 +35,11 @@ def lazy_import():
     from argocd_python_client.model.v1_micro_time import V1MicroTime
     from argocd_python_client.model.v1_object_meta import V1ObjectMeta
     from argocd_python_client.model.v1_object_reference import V1ObjectReference
-    from argocd_python_client.model.v1_time import V1Time
     globals()['V1EventSeries'] = V1EventSeries
     globals()['V1EventSource'] = V1EventSource
     globals()['V1MicroTime'] = V1MicroTime
     globals()['V1ObjectMeta'] = V1ObjectMeta
     globals()['V1ObjectReference'] = V1ObjectReference
-    globals()['V1Time'] = V1Time
 
 
 class V1Event(ModelNormal):
@@ -100,9 +98,9 @@ class V1Event(ModelNormal):
             'action': (str,),  # noqa: E501
             'count': (int,),  # noqa: E501
             'event_time': (V1MicroTime,),  # noqa: E501
-            'first_timestamp': (V1Time,),  # noqa: E501
+            'first_timestamp': (str,),  # noqa: E501
             'involved_object': (V1ObjectReference,),  # noqa: E501
-            'last_timestamp': (V1Time,),  # noqa: E501
+            'last_timestamp': (str,),  # noqa: E501
             'message': (str,),  # noqa: E501
             'metadata': (V1ObjectMeta,),  # noqa: E501
             'reason': (str,),  # noqa: E501
@@ -181,9 +179,9 @@ class V1Event(ModelNormal):
             action (str): [optional]  # noqa: E501
             count (int): [optional]  # noqa: E501
             event_time (V1MicroTime): [optional]  # noqa: E501
-            first_timestamp (V1Time): [optional]  # noqa: E501
+            first_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             involved_object (V1ObjectReference): [optional]  # noqa: E501
-            last_timestamp (V1Time): [optional]  # noqa: E501
+            last_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             message (str): [optional]  # noqa: E501
             metadata (V1ObjectMeta): [optional]  # noqa: E501
             reason (str): [optional]  # noqa: E501
@@ -277,9 +275,9 @@ class V1Event(ModelNormal):
             action (str): [optional]  # noqa: E501
             count (int): [optional]  # noqa: E501
             event_time (V1MicroTime): [optional]  # noqa: E501
-            first_timestamp (V1Time): [optional]  # noqa: E501
+            first_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             involved_object (V1ObjectReference): [optional]  # noqa: E501
-            last_timestamp (V1Time): [optional]  # noqa: E501
+            last_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             message (str): [optional]  # noqa: E501
             metadata (V1ObjectMeta): [optional]  # noqa: E501
             reason (str): [optional]  # noqa: E501

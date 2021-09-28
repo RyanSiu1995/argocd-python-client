@@ -79,7 +79,6 @@ from argocd_python_client.model.v1_object_meta import V1ObjectMeta
 from argocd_python_client.model.v1_object_reference import V1ObjectReference
 from argocd_python_client.model.v1_owner_reference import V1OwnerReference
 from argocd_python_client.model.v1_port_status import V1PortStatus
-from argocd_python_client.model.v1_time import V1Time
 from argocd_python_client.model.v1alpha1_aws_auth_config import V1alpha1AWSAuthConfig
 from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
 from argocd_python_client.model.v1alpha1_app_project_list import V1alpha1AppProjectList

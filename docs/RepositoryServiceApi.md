@@ -43,10 +43,7 @@ with argocd_python_client.ApiClient() as api_client:
     api_instance = repository_service_api.RepositoryServiceApi(api_client)
     body = V1alpha1Repository(
         connection_state=V1alpha1ConnectionState(
-            attempted_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            attempted_at="attempted_at_example",
             message="message_example",
             status="status_example",
         ),
@@ -747,10 +744,7 @@ with argocd_python_client.ApiClient() as api_client:
     repo_repo = "repo.repo_example" # str | Repo contains the URL to the remote repository
     body = V1alpha1Repository(
         connection_state=V1alpha1ConnectionState(
-            attempted_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            attempted_at="attempted_at_example",
             message="message_example",
             status="status_example",
         ),

@@ -32,10 +32,8 @@ from argocd_python_client.exceptions import ApiAttributeError
 def lazy_import():
     from argocd_python_client.model.v1_managed_fields_entry import V1ManagedFieldsEntry
     from argocd_python_client.model.v1_owner_reference import V1OwnerReference
-    from argocd_python_client.model.v1_time import V1Time
     globals()['V1ManagedFieldsEntry'] = V1ManagedFieldsEntry
     globals()['V1OwnerReference'] = V1OwnerReference
-    globals()['V1Time'] = V1Time
 
 
 class V1ObjectMeta(ModelNormal):
@@ -93,12 +91,11 @@ class V1ObjectMeta(ModelNormal):
         return {
             'annotations': ({str: (str,)},),  # noqa: E501
             'cluster_name': (str,),  # noqa: E501
-            'creation_timestamp': (V1Time,),  # noqa: E501
+            'creation_timestamp': (str,),  # noqa: E501
             'deletion_grace_period_seconds': (str,),  # noqa: E501
-            'deletion_timestamp': (V1Time,),  # noqa: E501
+            'deletion_timestamp': (str,),  # noqa: E501
             'finalizers': ([str],),  # noqa: E501
             'generate_name': (str,),  # noqa: E501
-            'generation': (str,),  # noqa: E501
             'labels': ({str: (str,)},),  # noqa: E501
             'managed_fields': ([V1ManagedFieldsEntry],),  # noqa: E501
             'name': (str,),  # noqa: E501
@@ -122,7 +119,6 @@ class V1ObjectMeta(ModelNormal):
         'deletion_timestamp': 'deletionTimestamp',  # noqa: E501
         'finalizers': 'finalizers',  # noqa: E501
         'generate_name': 'generateName',  # noqa: E501
-        'generation': 'generation',  # noqa: E501
         'labels': 'labels',  # noqa: E501
         'managed_fields': 'managedFields',  # noqa: E501
         'name': 'name',  # noqa: E501
@@ -176,12 +172,11 @@ class V1ObjectMeta(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             annotations ({str: (str,)}): [optional]  # noqa: E501
             cluster_name (str): [optional]  # noqa: E501
-            creation_timestamp (V1Time): [optional]  # noqa: E501
+            creation_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             deletion_grace_period_seconds (str): [optional]  # noqa: E501
-            deletion_timestamp (V1Time): [optional]  # noqa: E501
+            deletion_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             finalizers ([str]): [optional]  # noqa: E501
             generate_name (str): GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.  If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).  Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency +optional. [optional]  # noqa: E501
-            generation (str): [optional]  # noqa: E501
             labels ({str: (str,)}): [optional]  # noqa: E501
             managed_fields ([V1ManagedFieldsEntry]): ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.  +optional. [optional]  # noqa: E501
             name (str): [optional]  # noqa: E501
@@ -273,12 +268,11 @@ class V1ObjectMeta(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             annotations ({str: (str,)}): [optional]  # noqa: E501
             cluster_name (str): [optional]  # noqa: E501
-            creation_timestamp (V1Time): [optional]  # noqa: E501
+            creation_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             deletion_grace_period_seconds (str): [optional]  # noqa: E501
-            deletion_timestamp (V1Time): [optional]  # noqa: E501
+            deletion_timestamp (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             finalizers ([str]): [optional]  # noqa: E501
             generate_name (str): GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.  If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).  Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency +optional. [optional]  # noqa: E501
-            generation (str): [optional]  # noqa: E501
             labels ({str: (str,)}): [optional]  # noqa: E501
             managed_fields ([V1ManagedFieldsEntry]): ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object.  +optional. [optional]  # noqa: E501
             name (str): [optional]  # noqa: E501

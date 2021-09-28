@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created_at** | [**V1Time**](V1Time.md) |  | [optional] 
+**created_at** | **str** | Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal&#x3D;false +protobuf.as&#x3D;Timestamp +protobuf.options.(gogoproto.goproto_stringer)&#x3D;false | [optional] 
 **health** | [**V1alpha1HealthStatus**](V1alpha1HealthStatus.md) |  | [optional] 
 **images** | **[str]** |  | [optional] 
 **info** | [**[V1alpha1InfoItem]**](V1alpha1InfoItem.md) |  | [optional] 

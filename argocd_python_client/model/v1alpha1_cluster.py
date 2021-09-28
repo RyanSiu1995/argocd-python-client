@@ -30,11 +30,9 @@ from argocd_python_client.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from argocd_python_client.model.v1_time import V1Time
     from argocd_python_client.model.v1alpha1_cluster_config import V1alpha1ClusterConfig
     from argocd_python_client.model.v1alpha1_cluster_info import V1alpha1ClusterInfo
     from argocd_python_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
-    globals()['V1Time'] = V1Time
     globals()['V1alpha1ClusterConfig'] = V1alpha1ClusterConfig
     globals()['V1alpha1ClusterInfo'] = V1alpha1ClusterInfo
     globals()['V1alpha1ConnectionState'] = V1alpha1ConnectionState
@@ -98,7 +96,7 @@ class V1alpha1Cluster(ModelNormal):
             'info': (V1alpha1ClusterInfo,),  # noqa: E501
             'name': (str,),  # noqa: E501
             'namespaces': ([str],),  # noqa: E501
-            'refresh_requested_at': (V1Time,),  # noqa: E501
+            'refresh_requested_at': (str,),  # noqa: E501
             'server': (str,),  # noqa: E501
             'server_version': (str,),  # noqa: E501
             'shard': (str,),  # noqa: E501
@@ -167,7 +165,7 @@ class V1alpha1Cluster(ModelNormal):
             info (V1alpha1ClusterInfo): [optional]  # noqa: E501
             name (str): [optional]  # noqa: E501
             namespaces ([str]): Holds list of namespaces which are accessible in that cluster. Cluster level resources will be ignored if namespace list is not empty.. [optional]  # noqa: E501
-            refresh_requested_at (V1Time): [optional]  # noqa: E501
+            refresh_requested_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             server (str): [optional]  # noqa: E501
             server_version (str): [optional]  # noqa: E501
             shard (str): Shard contains optional shard number. Calculated on the fly by the application controller if not specified.. [optional]  # noqa: E501
@@ -257,7 +255,7 @@ class V1alpha1Cluster(ModelNormal):
             info (V1alpha1ClusterInfo): [optional]  # noqa: E501
             name (str): [optional]  # noqa: E501
             namespaces ([str]): Holds list of namespaces which are accessible in that cluster. Cluster level resources will be ignored if namespace list is not empty.. [optional]  # noqa: E501
-            refresh_requested_at (V1Time): [optional]  # noqa: E501
+            refresh_requested_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             server (str): [optional]  # noqa: E501
             server_version (str): [optional]  # noqa: E501
             shard (str): Shard contains optional shard number. Calculated on the fly by the application controller if not specified.. [optional]  # noqa: E501

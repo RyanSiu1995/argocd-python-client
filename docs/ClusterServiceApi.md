@@ -67,10 +67,7 @@ with argocd_python_client.ApiClient() as api_client:
             username="username_example",
         ),
         connection_state=V1alpha1ConnectionState(
-            attempted_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            attempted_at="attempted_at_example",
             message="message_example",
             status="status_example",
         ),
@@ -78,17 +75,11 @@ with argocd_python_client.ApiClient() as api_client:
             applications_count="applications_count_example",
             cache_info=V1alpha1ClusterCacheInfo(
                 apis_count="apis_count_example",
-                last_cache_sync_time=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                last_cache_sync_time="last_cache_sync_time_example",
                 resources_count="resources_count_example",
             ),
             connection_state=V1alpha1ConnectionState(
-                attempted_at=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                attempted_at="attempted_at_example",
                 message="message_example",
                 status="status_example",
             ),
@@ -98,10 +89,7 @@ with argocd_python_client.ApiClient() as api_client:
         namespaces=[
             "namespaces_example",
         ],
-        refresh_requested_at=V1Time(
-            nanos=1,
-            seconds="seconds_example",
-        ),
+        refresh_requested_at="refresh_requested_at_example",
         server="server_example",
         server_version="server_version_example",
         shard="shard_example",
@@ -559,10 +547,7 @@ with argocd_python_client.ApiClient() as api_client:
             username="username_example",
         ),
         connection_state=V1alpha1ConnectionState(
-            attempted_at=V1Time(
-                nanos=1,
-                seconds="seconds_example",
-            ),
+            attempted_at="attempted_at_example",
             message="message_example",
             status="status_example",
         ),
@@ -570,17 +555,11 @@ with argocd_python_client.ApiClient() as api_client:
             applications_count="applications_count_example",
             cache_info=V1alpha1ClusterCacheInfo(
                 apis_count="apis_count_example",
-                last_cache_sync_time=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                last_cache_sync_time="last_cache_sync_time_example",
                 resources_count="resources_count_example",
             ),
             connection_state=V1alpha1ConnectionState(
-                attempted_at=V1Time(
-                    nanos=1,
-                    seconds="seconds_example",
-                ),
+                attempted_at="attempted_at_example",
                 message="message_example",
                 status="status_example",
             ),
@@ -590,10 +569,7 @@ with argocd_python_client.ApiClient() as api_client:
         namespaces=[
             "namespaces_example",
         ],
-        refresh_requested_at=V1Time(
-            nanos=1,
-            seconds="seconds_example",
-        ),
+        refresh_requested_at="refresh_requested_at_example",
         server="server_example",
         server_version="server_version_example",
         shard="shard_example",

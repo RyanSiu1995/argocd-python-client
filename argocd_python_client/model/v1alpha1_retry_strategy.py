@@ -88,7 +88,6 @@ class V1alpha1RetryStrategy(ModelNormal):
         lazy_import()
         return {
             'backoff': (V1alpha1Backoff,),  # noqa: E501
-            'limit': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -98,7 +97,6 @@ class V1alpha1RetryStrategy(ModelNormal):
 
     attribute_map = {
         'backoff': 'backoff',  # noqa: E501
-        'limit': 'limit',  # noqa: E501
     }
 
     read_only_vars = {
@@ -143,7 +141,6 @@ class V1alpha1RetryStrategy(ModelNormal):
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
             backoff (V1alpha1Backoff): [optional]  # noqa: E501
-            limit (str): Limit is the maximum number of attempts for retrying a failed sync. If set to 0, no retries will be performed.. [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -226,7 +223,6 @@ class V1alpha1RetryStrategy(ModelNormal):
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
             backoff (V1alpha1Backoff): [optional]  # noqa: E501
-            limit (str): Limit is the maximum number of attempts for retrying a failed sync. If set to 0, no retries will be performed.. [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

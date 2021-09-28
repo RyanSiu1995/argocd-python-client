@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **info** | [**V1alpha1ClusterInfo**](V1alpha1ClusterInfo.md) |  | [optional] 
 **name** | **str** |  | [optional] 
 **namespaces** | **[str]** | Holds list of namespaces which are accessible in that cluster. Cluster level resources will be ignored if namespace list is not empty. | [optional] 
-**refresh_requested_at** | [**V1Time**](V1Time.md) |  | [optional] 
+**refresh_requested_at** | **str** | Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal&#x3D;false +protobuf.as&#x3D;Timestamp +protobuf.options.(gogoproto.goproto_stringer)&#x3D;false | [optional] 
 **server** | **str** |  | [optional] 
 **server_version** | **str** |  | [optional] 
 **shard** | **str** | Shard contains optional shard number. Calculated on the fly by the application controller if not specified. | [optional] 
