@@ -6211,7 +6211,7 @@
           "$ref": "#/definitions/v1Time"
         },
         "id": {
-          "type": "string",
+          "type": "int",
           "format": "int64",
           "title": "ID is an auto incrementing identifier of the RevisionHistory"
         },

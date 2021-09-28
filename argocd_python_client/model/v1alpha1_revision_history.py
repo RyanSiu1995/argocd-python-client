@@ -89,7 +89,6 @@ class V1alpha1RevisionHistory(ModelNormal):
         return {
             'deploy_started_at': (str,),  # noqa: E501
             'deployed_at': (str,),  # noqa: E501
-            'id': (str,),  # noqa: E501
             'revision': (str,),  # noqa: E501
             'source': (V1alpha1ApplicationSource,),  # noqa: E501
         }
@@ -102,7 +101,6 @@ class V1alpha1RevisionHistory(ModelNormal):
     attribute_map = {
         'deploy_started_at': 'deployStartedAt',  # noqa: E501
         'deployed_at': 'deployedAt',  # noqa: E501
-        'id': 'id',  # noqa: E501
         'revision': 'revision',  # noqa: E501
         'source': 'source',  # noqa: E501
     }
@@ -150,7 +148,6 @@ class V1alpha1RevisionHistory(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             deploy_started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             deployed_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
-            id (str): [optional]  # noqa: E501
             revision (str): [optional]  # noqa: E501
             source (V1alpha1ApplicationSource): [optional]  # noqa: E501
         """
@@ -236,7 +233,6 @@ class V1alpha1RevisionHistory(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             deploy_started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             deployed_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
-            id (str): [optional]  # noqa: E501
             revision (str): [optional]  # noqa: E501
             source (V1alpha1ApplicationSource): [optional]  # noqa: E501
         """

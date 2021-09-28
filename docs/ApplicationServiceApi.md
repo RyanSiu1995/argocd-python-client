@@ -375,7 +375,6 @@ with argocd_python_client.ApiClient() as api_client:
                 V1alpha1RevisionHistory(
                     deploy_started_at="deploy_started_at_example",
                     deployed_at="deployed_at_example",
-                    id="id_example",
                     revision="revision_example",
                     source=V1alpha1ApplicationSource(
                         chart="chart_example",
@@ -2870,7 +2869,6 @@ with argocd_python_client.ApiClient() as api_client:
                 V1alpha1RevisionHistory(
                     deploy_started_at="deploy_started_at_example",
                     deployed_at="deployed_at_example",
-                    id="id_example",
                     revision="revision_example",
                     source=V1alpha1ApplicationSource(
                         chart="chart_example",
