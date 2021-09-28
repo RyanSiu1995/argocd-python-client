@@ -5,6 +5,10 @@ generate:
 		--git-user-id RyanSiu1995 -o ./ \
 		--package-name argocd_python_client
 
+.PHONY: test
+test:
+	@tox
+
 .PHONY: clean
 clean:
 	@rm -rf ./dist || true
