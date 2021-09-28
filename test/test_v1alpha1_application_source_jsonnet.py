@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_jsonnet_var import V1alpha1JsonnetVar
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_jsonnet_var import V1alpha1JsonnetVar
 globals()['V1alpha1JsonnetVar'] = V1alpha1JsonnetVar
-from openapi_client.model.v1alpha1_application_source_jsonnet import V1alpha1ApplicationSourceJsonnet
+from argocd_python_client.model.v1alpha1_application_source_jsonnet import V1alpha1ApplicationSourceJsonnet
 
 
 class TestV1alpha1ApplicationSourceJsonnet(unittest.TestCase):

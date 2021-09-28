@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_override_ignore_diff import V1alpha1OverrideIgnoreDiff
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_override_ignore_diff import V1alpha1OverrideIgnoreDiff
 
 
 class TestV1alpha1OverrideIgnoreDiff(unittest.TestCase):

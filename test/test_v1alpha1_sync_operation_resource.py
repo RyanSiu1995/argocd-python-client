@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_sync_operation_resource import V1alpha1SyncOperationResource
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_sync_operation_resource import V1alpha1SyncOperationResource
 
 
 class TestV1alpha1SyncOperationResource(unittest.TestCase):

@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_repository_certificate import V1alpha1RepositoryCertificate
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_repository_certificate import V1alpha1RepositoryCertificate
 
 
 class TestV1alpha1RepositoryCertificate(unittest.TestCase):

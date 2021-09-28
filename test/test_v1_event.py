@@ -11,20 +11,20 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_event_series import V1EventSeries
-from openapi_client.model.v1_event_source import V1EventSource
-from openapi_client.model.v1_micro_time import V1MicroTime
-from openapi_client.model.v1_object_meta import V1ObjectMeta
-from openapi_client.model.v1_object_reference import V1ObjectReference
-from openapi_client.model.v1_time import V1Time
+import argocd_python_client
+from argocd_python_client.model.v1_event_series import V1EventSeries
+from argocd_python_client.model.v1_event_source import V1EventSource
+from argocd_python_client.model.v1_micro_time import V1MicroTime
+from argocd_python_client.model.v1_object_meta import V1ObjectMeta
+from argocd_python_client.model.v1_object_reference import V1ObjectReference
+from argocd_python_client.model.v1_time import V1Time
 globals()['V1EventSeries'] = V1EventSeries
 globals()['V1EventSource'] = V1EventSource
 globals()['V1MicroTime'] = V1MicroTime
 globals()['V1ObjectMeta'] = V1ObjectMeta
 globals()['V1ObjectReference'] = V1ObjectReference
 globals()['V1Time'] = V1Time
-from openapi_client.model.v1_event import V1Event
+from argocd_python_client.model.v1_event import V1Event
 
 
 class TestV1Event(unittest.TestCase):

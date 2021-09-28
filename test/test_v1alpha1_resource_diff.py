@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_resource_diff import V1alpha1ResourceDiff
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_resource_diff import V1alpha1ResourceDiff
 
 
 class TestV1alpha1ResourceDiff(unittest.TestCase):

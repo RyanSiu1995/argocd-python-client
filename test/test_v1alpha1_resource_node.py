@@ -11,18 +11,18 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
-from openapi_client.model.v1alpha1_health_status import V1alpha1HealthStatus
-from openapi_client.model.v1alpha1_info_item import V1alpha1InfoItem
-from openapi_client.model.v1alpha1_resource_networking_info import V1alpha1ResourceNetworkingInfo
-from openapi_client.model.v1alpha1_resource_ref import V1alpha1ResourceRef
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
+from argocd_python_client.model.v1alpha1_health_status import V1alpha1HealthStatus
+from argocd_python_client.model.v1alpha1_info_item import V1alpha1InfoItem
+from argocd_python_client.model.v1alpha1_resource_networking_info import V1alpha1ResourceNetworkingInfo
+from argocd_python_client.model.v1alpha1_resource_ref import V1alpha1ResourceRef
 globals()['V1Time'] = V1Time
 globals()['V1alpha1HealthStatus'] = V1alpha1HealthStatus
 globals()['V1alpha1InfoItem'] = V1alpha1InfoItem
 globals()['V1alpha1ResourceNetworkingInfo'] = V1alpha1ResourceNetworkingInfo
 globals()['V1alpha1ResourceRef'] = V1alpha1ResourceRef
-from openapi_client.model.v1alpha1_resource_node import V1alpha1ResourceNode
+from argocd_python_client.model.v1alpha1_resource_node import V1alpha1ResourceNode
 
 
 class TestV1alpha1ResourceNode(unittest.TestCase):

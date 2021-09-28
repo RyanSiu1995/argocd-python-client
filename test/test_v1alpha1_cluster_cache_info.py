@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
 globals()['V1Time'] = V1Time
-from openapi_client.model.v1alpha1_cluster_cache_info import V1alpha1ClusterCacheInfo
+from argocd_python_client.model.v1alpha1_cluster_cache_info import V1alpha1ClusterCacheInfo
 
 
 class TestV1alpha1ClusterCacheInfo(unittest.TestCase):

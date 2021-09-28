@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_sync_strategy_apply import V1alpha1SyncStrategyApply
-from openapi_client.model.v1alpha1_sync_strategy_hook import V1alpha1SyncStrategyHook
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_sync_strategy_apply import V1alpha1SyncStrategyApply
+from argocd_python_client.model.v1alpha1_sync_strategy_hook import V1alpha1SyncStrategyHook
 globals()['V1alpha1SyncStrategyApply'] = V1alpha1SyncStrategyApply
 globals()['V1alpha1SyncStrategyHook'] = V1alpha1SyncStrategyHook
-from openapi_client.model.v1alpha1_sync_strategy import V1alpha1SyncStrategy
+from argocd_python_client.model.v1alpha1_sync_strategy import V1alpha1SyncStrategy
 
 
 class TestV1alpha1SyncStrategy(unittest.TestCase):

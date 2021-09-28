@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
-from openapi_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
+from argocd_python_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
 globals()['V1Time'] = V1Time
 globals()['V1alpha1ApplicationSource'] = V1alpha1ApplicationSource
-from openapi_client.model.v1alpha1_revision_history import V1alpha1RevisionHistory
+from argocd_python_client.model.v1alpha1_revision_history import V1alpha1RevisionHistory
 
 
 class TestV1alpha1RevisionHistory(unittest.TestCase):

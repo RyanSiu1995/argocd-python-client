@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_health_status import V1alpha1HealthStatus
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_health_status import V1alpha1HealthStatus
 globals()['V1alpha1HealthStatus'] = V1alpha1HealthStatus
-from openapi_client.model.v1alpha1_resource_status import V1alpha1ResourceStatus
+from argocd_python_client.model.v1alpha1_resource_status import V1alpha1ResourceStatus
 
 
 class TestV1alpha1ResourceStatus(unittest.TestCase):

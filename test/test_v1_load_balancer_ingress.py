@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_port_status import V1PortStatus
+import argocd_python_client
+from argocd_python_client.model.v1_port_status import V1PortStatus
 globals()['V1PortStatus'] = V1PortStatus
-from openapi_client.model.v1_load_balancer_ingress import V1LoadBalancerIngress
+from argocd_python_client.model.v1_load_balancer_ingress import V1LoadBalancerIngress
 
 
 class TestV1LoadBalancerIngress(unittest.TestCase):

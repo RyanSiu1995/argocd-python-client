@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_sync_window import V1alpha1SyncWindow
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_sync_window import V1alpha1SyncWindow
 globals()['V1alpha1SyncWindow'] = V1alpha1SyncWindow
-from openapi_client.model.project_sync_windows_response import ProjectSyncWindowsResponse
+from argocd_python_client.model.project_sync_windows_response import ProjectSyncWindowsResponse
 
 
 class TestProjectSyncWindowsResponse(unittest.TestCase):

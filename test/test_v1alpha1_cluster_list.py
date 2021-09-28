@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_list_meta import V1ListMeta
-from openapi_client.model.v1alpha1_cluster import V1alpha1Cluster
+import argocd_python_client
+from argocd_python_client.model.v1_list_meta import V1ListMeta
+from argocd_python_client.model.v1alpha1_cluster import V1alpha1Cluster
 globals()['V1ListMeta'] = V1ListMeta
 globals()['V1alpha1Cluster'] = V1alpha1Cluster
-from openapi_client.model.v1alpha1_cluster_list import V1alpha1ClusterList
+from argocd_python_client.model.v1alpha1_cluster_list import V1alpha1ClusterList
 
 
 class TestV1alpha1ClusterList(unittest.TestCase):

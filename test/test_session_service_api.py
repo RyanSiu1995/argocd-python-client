@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.session_service_api import SessionServiceApi  # noqa: E501
+import argocd_python_client
+from argocd_python_client.api.session_service_api import SessionServiceApi  # noqa: E501
 
 
 class TestSessionServiceApi(unittest.TestCase):

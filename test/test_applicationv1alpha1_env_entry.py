@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.applicationv1alpha1_env_entry import Applicationv1alpha1EnvEntry
+import argocd_python_client
+from argocd_python_client.model.applicationv1alpha1_env_entry import Applicationv1alpha1EnvEntry
 
 
 class TestApplicationv1alpha1EnvEntry(unittest.TestCase):

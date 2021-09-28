@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.session_session_response import SessionSessionResponse
+import argocd_python_client
+from argocd_python_client.model.session_session_response import SessionSessionResponse
 
 
 class TestSessionSessionResponse(unittest.TestCase):

@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_aws_auth_config import V1alpha1AWSAuthConfig
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_aws_auth_config import V1alpha1AWSAuthConfig
 
 
 class TestV1alpha1AWSAuthConfig(unittest.TestCase):

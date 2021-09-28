@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_object_meta import V1ObjectMeta
-from openapi_client.model.v1alpha1_app_project_spec import V1alpha1AppProjectSpec
-from openapi_client.model.v1alpha1_app_project_status import V1alpha1AppProjectStatus
+import argocd_python_client
+from argocd_python_client.model.v1_object_meta import V1ObjectMeta
+from argocd_python_client.model.v1alpha1_app_project_spec import V1alpha1AppProjectSpec
+from argocd_python_client.model.v1alpha1_app_project_status import V1alpha1AppProjectStatus
 globals()['V1ObjectMeta'] = V1ObjectMeta
 globals()['V1alpha1AppProjectSpec'] = V1alpha1AppProjectSpec
 globals()['V1alpha1AppProjectStatus'] = V1alpha1AppProjectStatus
-from openapi_client.model.v1alpha1_app_project import V1alpha1AppProject
+from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
 
 
 class TestV1alpha1AppProject(unittest.TestCase):

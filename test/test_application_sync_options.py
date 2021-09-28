@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.application_sync_options import ApplicationSyncOptions
+import argocd_python_client
+from argocd_python_client.model.application_sync_options import ApplicationSyncOptions
 
 
 class TestApplicationSyncOptions(unittest.TestCase):

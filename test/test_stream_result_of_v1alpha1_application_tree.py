@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.runtime_stream_error import RuntimeStreamError
-from openapi_client.model.v1alpha1_application_tree import V1alpha1ApplicationTree
+import argocd_python_client
+from argocd_python_client.model.runtime_stream_error import RuntimeStreamError
+from argocd_python_client.model.v1alpha1_application_tree import V1alpha1ApplicationTree
 globals()['RuntimeStreamError'] = RuntimeStreamError
 globals()['V1alpha1ApplicationTree'] = V1alpha1ApplicationTree
-from openapi_client.model.stream_result_of_v1alpha1_application_tree import StreamResultOfV1alpha1ApplicationTree
+from argocd_python_client.model.stream_result_of_v1alpha1_application_tree import StreamResultOfV1alpha1ApplicationTree
 
 
 class TestStreamResultOfV1alpha1ApplicationTree(unittest.TestCase):

@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_helm_file_parameter import V1alpha1HelmFileParameter
-from openapi_client.model.v1alpha1_helm_parameter import V1alpha1HelmParameter
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_helm_file_parameter import V1alpha1HelmFileParameter
+from argocd_python_client.model.v1alpha1_helm_parameter import V1alpha1HelmParameter
 globals()['V1alpha1HelmFileParameter'] = V1alpha1HelmFileParameter
 globals()['V1alpha1HelmParameter'] = V1alpha1HelmParameter
-from openapi_client.model.v1alpha1_application_source_helm import V1alpha1ApplicationSourceHelm
+from argocd_python_client.model.v1alpha1_application_source_helm import V1alpha1ApplicationSourceHelm
 
 
 class TestV1alpha1ApplicationSourceHelm(unittest.TestCase):

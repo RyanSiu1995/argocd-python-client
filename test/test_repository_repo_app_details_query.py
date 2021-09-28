@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
 globals()['V1alpha1ApplicationSource'] = V1alpha1ApplicationSource
-from openapi_client.model.repository_repo_app_details_query import RepositoryRepoAppDetailsQuery
+from argocd_python_client.model.repository_repo_app_details_query import RepositoryRepoAppDetailsQuery
 
 
 class TestRepositoryRepoAppDetailsQuery(unittest.TestCase):

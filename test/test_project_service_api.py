@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.project_service_api import ProjectServiceApi  # noqa: E501
+import argocd_python_client
+from argocd_python_client.api.project_service_api import ProjectServiceApi  # noqa: E501
 
 
 class TestProjectServiceApi(unittest.TestCase):

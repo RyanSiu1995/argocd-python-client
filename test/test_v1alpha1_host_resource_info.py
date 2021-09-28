@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_host_resource_info import V1alpha1HostResourceInfo
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_host_resource_info import V1alpha1HostResourceInfo
 
 
 class TestV1alpha1HostResourceInfo(unittest.TestCase):

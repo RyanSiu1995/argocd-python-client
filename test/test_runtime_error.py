@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.protobuf_any import ProtobufAny
+import argocd_python_client
+from argocd_python_client.model.protobuf_any import ProtobufAny
 globals()['ProtobufAny'] = ProtobufAny
-from openapi_client.model.runtime_error import RuntimeError
+from argocd_python_client.model.runtime_error import RuntimeError
 
 
 class TestRuntimeError(unittest.TestCase):

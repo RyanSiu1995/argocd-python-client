@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.certificate_service_api import CertificateServiceApi  # noqa: E501
+import argocd_python_client
+from argocd_python_client.api.certificate_service_api import CertificateServiceApi  # noqa: E501
 
 
 class TestCertificateServiceApi(unittest.TestCase):

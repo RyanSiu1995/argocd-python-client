@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
 
 
 class TestV1alpha1RepoCreds(unittest.TestCase):

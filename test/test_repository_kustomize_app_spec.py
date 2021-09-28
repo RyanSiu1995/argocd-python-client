@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.repository_kustomize_app_spec import RepositoryKustomizeAppSpec
+import argocd_python_client
+from argocd_python_client.model.repository_kustomize_app_spec import RepositoryKustomizeAppSpec
 
 
 class TestRepositoryKustomizeAppSpec(unittest.TestCase):

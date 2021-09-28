@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_orphaned_resource_key import V1alpha1OrphanedResourceKey
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_orphaned_resource_key import V1alpha1OrphanedResourceKey
 
 
 class TestV1alpha1OrphanedResourceKey(unittest.TestCase):

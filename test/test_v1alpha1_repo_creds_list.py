@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_list_meta import V1ListMeta
-from openapi_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
+import argocd_python_client
+from argocd_python_client.model.v1_list_meta import V1ListMeta
+from argocd_python_client.model.v1alpha1_repo_creds import V1alpha1RepoCreds
 globals()['V1ListMeta'] = V1ListMeta
 globals()['V1alpha1RepoCreds'] = V1alpha1RepoCreds
-from openapi_client.model.v1alpha1_repo_creds_list import V1alpha1RepoCredsList
+from argocd_python_client.model.v1alpha1_repo_creds_list import V1alpha1RepoCredsList
 
 
 class TestV1alpha1RepoCredsList(unittest.TestCase):

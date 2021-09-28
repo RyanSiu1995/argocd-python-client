@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_gnu_pg_public_key_list import V1alpha1GnuPGPublicKeyList
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_gnu_pg_public_key_list import V1alpha1GnuPGPublicKeyList
 globals()['V1alpha1GnuPGPublicKeyList'] = V1alpha1GnuPGPublicKeyList
-from openapi_client.model.gpgkey_gnu_pg_public_key_create_response import GpgkeyGnuPGPublicKeyCreateResponse
+from argocd_python_client.model.gpgkey_gnu_pg_public_key_create_response import GpgkeyGnuPGPublicKeyCreateResponse
 
 
 class TestGpgkeyGnuPGPublicKeyCreateResponse(unittest.TestCase):

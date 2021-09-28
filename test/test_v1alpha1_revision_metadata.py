@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
 globals()['V1Time'] = V1Time
-from openapi_client.model.v1alpha1_revision_metadata import V1alpha1RevisionMetadata
+from argocd_python_client.model.v1alpha1_revision_metadata import V1alpha1RevisionMetadata
 
 
 class TestV1alpha1RevisionMetadata(unittest.TestCase):

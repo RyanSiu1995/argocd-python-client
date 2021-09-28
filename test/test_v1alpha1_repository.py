@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
 globals()['V1alpha1ConnectionState'] = V1alpha1ConnectionState
-from openapi_client.model.v1alpha1_repository import V1alpha1Repository
+from argocd_python_client.model.v1alpha1_repository import V1alpha1Repository
 
 
 class TestV1alpha1Repository(unittest.TestCase):

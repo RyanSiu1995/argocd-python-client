@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.version_version_message import VersionVersionMessage
+import argocd_python_client
+from argocd_python_client.model.version_version_message import VersionVersionMessage
 
 
 class TestVersionVersionMessage(unittest.TestCase):

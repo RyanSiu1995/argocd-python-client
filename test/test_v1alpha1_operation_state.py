@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
-from openapi_client.model.v1alpha1_operation import V1alpha1Operation
-from openapi_client.model.v1alpha1_sync_operation_result import V1alpha1SyncOperationResult
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
+from argocd_python_client.model.v1alpha1_operation import V1alpha1Operation
+from argocd_python_client.model.v1alpha1_sync_operation_result import V1alpha1SyncOperationResult
 globals()['V1Time'] = V1Time
 globals()['V1alpha1Operation'] = V1alpha1Operation
 globals()['V1alpha1SyncOperationResult'] = V1alpha1SyncOperationResult
-from openapi_client.model.v1alpha1_operation_state import V1alpha1OperationState
+from argocd_python_client.model.v1alpha1_operation_state import V1alpha1OperationState
 
 
 class TestV1alpha1OperationState(unittest.TestCase):

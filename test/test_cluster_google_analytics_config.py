@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.cluster_google_analytics_config import ClusterGoogleAnalyticsConfig
+import argocd_python_client
+from argocd_python_client.model.cluster_google_analytics_config import ClusterGoogleAnalyticsConfig
 
 
 class TestClusterGoogleAnalyticsConfig(unittest.TestCase):

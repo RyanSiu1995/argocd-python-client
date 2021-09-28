@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_list_meta import V1ListMeta
-from openapi_client.model.v1alpha1_repository_certificate import V1alpha1RepositoryCertificate
+import argocd_python_client
+from argocd_python_client.model.v1_list_meta import V1ListMeta
+from argocd_python_client.model.v1alpha1_repository_certificate import V1alpha1RepositoryCertificate
 globals()['V1ListMeta'] = V1ListMeta
 globals()['V1alpha1RepositoryCertificate'] = V1alpha1RepositoryCertificate
-from openapi_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
+from argocd_python_client.model.v1alpha1_repository_certificate_list import V1alpha1RepositoryCertificateList
 
 
 class TestV1alpha1RepositoryCertificateList(unittest.TestCase):

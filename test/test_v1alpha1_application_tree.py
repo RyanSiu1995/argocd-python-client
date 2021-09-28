@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_host_info import V1alpha1HostInfo
-from openapi_client.model.v1alpha1_resource_node import V1alpha1ResourceNode
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_host_info import V1alpha1HostInfo
+from argocd_python_client.model.v1alpha1_resource_node import V1alpha1ResourceNode
 globals()['V1alpha1HostInfo'] = V1alpha1HostInfo
 globals()['V1alpha1ResourceNode'] = V1alpha1ResourceNode
-from openapi_client.model.v1alpha1_application_tree import V1alpha1ApplicationTree
+from argocd_python_client.model.v1alpha1_application_tree import V1alpha1ApplicationTree
 
 
 class TestV1alpha1ApplicationTree(unittest.TestCase):

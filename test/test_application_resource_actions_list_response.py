@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_resource_action import V1alpha1ResourceAction
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_resource_action import V1alpha1ResourceAction
 globals()['V1alpha1ResourceAction'] = V1alpha1ResourceAction
-from openapi_client.model.application_resource_actions_list_response import ApplicationResourceActionsListResponse
+from argocd_python_client.model.application_resource_actions_list_response import ApplicationResourceActionsListResponse
 
 
 class TestApplicationResourceActionsListResponse(unittest.TestCase):

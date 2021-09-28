@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.application_application_resource_response import ApplicationApplicationResourceResponse
+import argocd_python_client
+from argocd_python_client.model.application_application_resource_response import ApplicationApplicationResourceResponse
 
 
 class TestApplicationApplicationResourceResponse(unittest.TestCase):

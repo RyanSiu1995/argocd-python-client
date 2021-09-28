@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_resource_ignore_differences import V1alpha1ResourceIgnoreDifferences
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_resource_ignore_differences import V1alpha1ResourceIgnoreDifferences
 
 
 class TestV1alpha1ResourceIgnoreDifferences(unittest.TestCase):

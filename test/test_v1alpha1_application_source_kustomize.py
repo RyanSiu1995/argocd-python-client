@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application_source_kustomize import V1alpha1ApplicationSourceKustomize
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application_source_kustomize import V1alpha1ApplicationSourceKustomize
 
 
 class TestV1alpha1ApplicationSourceKustomize(unittest.TestCase):

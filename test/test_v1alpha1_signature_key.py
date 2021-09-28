@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_signature_key import V1alpha1SignatureKey
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_signature_key import V1alpha1SignatureKey
 
 
 class TestV1alpha1SignatureKey(unittest.TestCase):

@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_event import V1Event
-from openapi_client.model.v1_list_meta import V1ListMeta
+import argocd_python_client
+from argocd_python_client.model.v1_event import V1Event
+from argocd_python_client.model.v1_list_meta import V1ListMeta
 globals()['V1Event'] = V1Event
 globals()['V1ListMeta'] = V1ListMeta
-from openapi_client.model.v1_event_list import V1EventList
+from argocd_python_client.model.v1_event_list import V1EventList
 
 
 class TestV1EventList(unittest.TestCase):

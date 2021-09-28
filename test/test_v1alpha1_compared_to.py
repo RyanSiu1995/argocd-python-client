@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application_destination import V1alpha1ApplicationDestination
-from openapi_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application_destination import V1alpha1ApplicationDestination
+from argocd_python_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
 globals()['V1alpha1ApplicationDestination'] = V1alpha1ApplicationDestination
 globals()['V1alpha1ApplicationSource'] = V1alpha1ApplicationSource
-from openapi_client.model.v1alpha1_compared_to import V1alpha1ComparedTo
+from argocd_python_client.model.v1alpha1_compared_to import V1alpha1ComparedTo
 
 
 class TestV1alpha1ComparedTo(unittest.TestCase):

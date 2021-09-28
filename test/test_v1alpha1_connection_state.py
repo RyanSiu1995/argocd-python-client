@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
 globals()['V1Time'] = V1Time
-from openapi_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
+from argocd_python_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
 
 
 class TestV1alpha1ConnectionState(unittest.TestCase):

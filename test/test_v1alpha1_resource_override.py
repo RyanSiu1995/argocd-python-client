@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_known_type_field import V1alpha1KnownTypeField
-from openapi_client.model.v1alpha1_override_ignore_diff import V1alpha1OverrideIgnoreDiff
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_known_type_field import V1alpha1KnownTypeField
+from argocd_python_client.model.v1alpha1_override_ignore_diff import V1alpha1OverrideIgnoreDiff
 globals()['V1alpha1KnownTypeField'] = V1alpha1KnownTypeField
 globals()['V1alpha1OverrideIgnoreDiff'] = V1alpha1OverrideIgnoreDiff
-from openapi_client.model.v1alpha1_resource_override import V1alpha1ResourceOverride
+from argocd_python_client.model.v1alpha1_resource_override import V1alpha1ResourceOverride
 
 
 class TestV1alpha1ResourceOverride(unittest.TestCase):

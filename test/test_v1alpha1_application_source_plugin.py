@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.applicationv1alpha1_env_entry import Applicationv1alpha1EnvEntry
+import argocd_python_client
+from argocd_python_client.model.applicationv1alpha1_env_entry import Applicationv1alpha1EnvEntry
 globals()['Applicationv1alpha1EnvEntry'] = Applicationv1alpha1EnvEntry
-from openapi_client.model.v1alpha1_application_source_plugin import V1alpha1ApplicationSourcePlugin
+from argocd_python_client.model.v1alpha1_application_source_plugin import V1alpha1ApplicationSourcePlugin
 
 
 class TestV1alpha1ApplicationSourcePlugin(unittest.TestCase):

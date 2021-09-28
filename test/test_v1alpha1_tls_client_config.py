@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_tls_client_config import V1alpha1TLSClientConfig
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_tls_client_config import V1alpha1TLSClientConfig
 
 
 class TestV1alpha1TLSClientConfig(unittest.TestCase):

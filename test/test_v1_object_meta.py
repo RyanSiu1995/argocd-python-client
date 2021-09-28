@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_managed_fields_entry import V1ManagedFieldsEntry
-from openapi_client.model.v1_owner_reference import V1OwnerReference
-from openapi_client.model.v1_time import V1Time
+import argocd_python_client
+from argocd_python_client.model.v1_managed_fields_entry import V1ManagedFieldsEntry
+from argocd_python_client.model.v1_owner_reference import V1OwnerReference
+from argocd_python_client.model.v1_time import V1Time
 globals()['V1ManagedFieldsEntry'] = V1ManagedFieldsEntry
 globals()['V1OwnerReference'] = V1OwnerReference
 globals()['V1Time'] = V1Time
-from openapi_client.model.v1_object_meta import V1ObjectMeta
+from argocd_python_client.model.v1_object_meta import V1ObjectMeta
 
 
 class TestV1ObjectMeta(unittest.TestCase):

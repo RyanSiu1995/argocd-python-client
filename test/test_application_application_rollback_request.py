@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.application_application_rollback_request import ApplicationApplicationRollbackRequest
+import argocd_python_client
+from argocd_python_client.model.application_application_rollback_request import ApplicationApplicationRollbackRequest
 
 
 class TestApplicationApplicationRollbackRequest(unittest.TestCase):

@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.repository_helm_app_spec import RepositoryHelmAppSpec
-from openapi_client.model.repository_ksonnet_app_spec import RepositoryKsonnetAppSpec
-from openapi_client.model.repository_kustomize_app_spec import RepositoryKustomizeAppSpec
+import argocd_python_client
+from argocd_python_client.model.repository_helm_app_spec import RepositoryHelmAppSpec
+from argocd_python_client.model.repository_ksonnet_app_spec import RepositoryKsonnetAppSpec
+from argocd_python_client.model.repository_kustomize_app_spec import RepositoryKustomizeAppSpec
 globals()['RepositoryHelmAppSpec'] = RepositoryHelmAppSpec
 globals()['RepositoryKsonnetAppSpec'] = RepositoryKsonnetAppSpec
 globals()['RepositoryKustomizeAppSpec'] = RepositoryKustomizeAppSpec
-from openapi_client.model.repository_repo_app_details_response import RepositoryRepoAppDetailsResponse
+from argocd_python_client.model.repository_repo_app_details_response import RepositoryRepoAppDetailsResponse
 
 
 class TestRepositoryRepoAppDetailsResponse(unittest.TestCase):

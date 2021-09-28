@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_backoff import V1alpha1Backoff
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_backoff import V1alpha1Backoff
 
 
 class TestV1alpha1Backoff(unittest.TestCase):

@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_command import V1alpha1Command
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_command import V1alpha1Command
 globals()['V1alpha1Command'] = V1alpha1Command
-from openapi_client.model.v1alpha1_config_management_plugin import V1alpha1ConfigManagementPlugin
+from argocd_python_client.model.v1alpha1_config_management_plugin import V1alpha1ConfigManagementPlugin
 
 
 class TestV1alpha1ConfigManagementPlugin(unittest.TestCase):

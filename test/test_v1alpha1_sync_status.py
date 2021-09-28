@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_compared_to import V1alpha1ComparedTo
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_compared_to import V1alpha1ComparedTo
 globals()['V1alpha1ComparedTo'] = V1alpha1ComparedTo
-from openapi_client.model.v1alpha1_sync_status import V1alpha1SyncStatus
+from argocd_python_client.model.v1alpha1_sync_status import V1alpha1SyncStatus
 
 
 class TestV1alpha1SyncStatus(unittest.TestCase):

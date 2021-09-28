@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_resource_result import V1alpha1ResourceResult
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_resource_result import V1alpha1ResourceResult
 
 
 class TestV1alpha1ResourceResult(unittest.TestCase):

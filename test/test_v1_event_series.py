@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_micro_time import V1MicroTime
+import argocd_python_client
+from argocd_python_client.model.v1_micro_time import V1MicroTime
 globals()['V1MicroTime'] = V1MicroTime
-from openapi_client.model.v1_event_series import V1EventSeries
+from argocd_python_client.model.v1_event_series import V1EventSeries
 
 
 class TestV1EventSeries(unittest.TestCase):

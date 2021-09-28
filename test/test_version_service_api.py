@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.version_service_api import VersionServiceApi  # noqa: E501
+import argocd_python_client
+from argocd_python_client.api.version_service_api import VersionServiceApi  # noqa: E501
 
 
 class TestVersionServiceApi(unittest.TestCase):

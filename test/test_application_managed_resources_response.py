@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_resource_diff import V1alpha1ResourceDiff
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_resource_diff import V1alpha1ResourceDiff
 globals()['V1alpha1ResourceDiff'] = V1alpha1ResourceDiff
-from openapi_client.model.application_managed_resources_response import ApplicationManagedResourcesResponse
+from argocd_python_client.model.application_managed_resources_response import ApplicationManagedResourcesResponse
 
 
 class TestApplicationManagedResourcesResponse(unittest.TestCase):

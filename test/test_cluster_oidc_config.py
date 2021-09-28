@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.oidc_claim import OidcClaim
+import argocd_python_client
+from argocd_python_client.model.oidc_claim import OidcClaim
 globals()['OidcClaim'] = OidcClaim
-from openapi_client.model.cluster_oidc_config import ClusterOIDCConfig
+from argocd_python_client.model.cluster_oidc_config import ClusterOIDCConfig
 
 
 class TestClusterOIDCConfig(unittest.TestCase):

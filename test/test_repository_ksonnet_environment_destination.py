@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.repository_ksonnet_environment_destination import RepositoryKsonnetEnvironmentDestination
+import argocd_python_client
+from argocd_python_client.model.repository_ksonnet_environment_destination import RepositoryKsonnetEnvironmentDestination
 
 
 class TestRepositoryKsonnetEnvironmentDestination(unittest.TestCase):

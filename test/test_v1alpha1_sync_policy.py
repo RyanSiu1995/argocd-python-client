@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
-from openapi_client.model.v1alpha1_sync_policy_automated import V1alpha1SyncPolicyAutomated
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
+from argocd_python_client.model.v1alpha1_sync_policy_automated import V1alpha1SyncPolicyAutomated
 globals()['V1alpha1RetryStrategy'] = V1alpha1RetryStrategy
 globals()['V1alpha1SyncPolicyAutomated'] = V1alpha1SyncPolicyAutomated
-from openapi_client.model.v1alpha1_sync_policy import V1alpha1SyncPolicy
+from argocd_python_client.model.v1alpha1_sync_policy import V1alpha1SyncPolicy
 
 
 class TestV1alpha1SyncPolicy(unittest.TestCase):

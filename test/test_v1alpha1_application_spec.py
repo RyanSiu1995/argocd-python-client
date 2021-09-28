@@ -11,18 +11,18 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application_destination import V1alpha1ApplicationDestination
-from openapi_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
-from openapi_client.model.v1alpha1_info import V1alpha1Info
-from openapi_client.model.v1alpha1_resource_ignore_differences import V1alpha1ResourceIgnoreDifferences
-from openapi_client.model.v1alpha1_sync_policy import V1alpha1SyncPolicy
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application_destination import V1alpha1ApplicationDestination
+from argocd_python_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
+from argocd_python_client.model.v1alpha1_info import V1alpha1Info
+from argocd_python_client.model.v1alpha1_resource_ignore_differences import V1alpha1ResourceIgnoreDifferences
+from argocd_python_client.model.v1alpha1_sync_policy import V1alpha1SyncPolicy
 globals()['V1alpha1ApplicationDestination'] = V1alpha1ApplicationDestination
 globals()['V1alpha1ApplicationSource'] = V1alpha1ApplicationSource
 globals()['V1alpha1Info'] = V1alpha1Info
 globals()['V1alpha1ResourceIgnoreDifferences'] = V1alpha1ResourceIgnoreDifferences
 globals()['V1alpha1SyncPolicy'] = V1alpha1SyncPolicy
-from openapi_client.model.v1alpha1_application_spec import V1alpha1ApplicationSpec
+from argocd_python_client.model.v1alpha1_application_spec import V1alpha1ApplicationSpec
 
 
 class TestV1alpha1ApplicationSpec(unittest.TestCase):

@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_known_type_field import V1alpha1KnownTypeField
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_known_type_field import V1alpha1KnownTypeField
 
 
 class TestV1alpha1KnownTypeField(unittest.TestCase):

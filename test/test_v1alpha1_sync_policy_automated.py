@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_sync_policy_automated import V1alpha1SyncPolicyAutomated
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_sync_policy_automated import V1alpha1SyncPolicyAutomated
 
 
 class TestV1alpha1SyncPolicyAutomated(unittest.TestCase):

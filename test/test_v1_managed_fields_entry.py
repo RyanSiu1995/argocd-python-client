@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_fields_v1 import V1FieldsV1
-from openapi_client.model.v1_time import V1Time
+import argocd_python_client
+from argocd_python_client.model.v1_fields_v1 import V1FieldsV1
+from argocd_python_client.model.v1_time import V1Time
 globals()['V1FieldsV1'] = V1FieldsV1
 globals()['V1Time'] = V1Time
-from openapi_client.model.v1_managed_fields_entry import V1ManagedFieldsEntry
+from argocd_python_client.model.v1_managed_fields_entry import V1ManagedFieldsEntry
 
 
 class TestV1ManagedFieldsEntry(unittest.TestCase):

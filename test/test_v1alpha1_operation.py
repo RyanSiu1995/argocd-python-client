@@ -11,16 +11,16 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_info import V1alpha1Info
-from openapi_client.model.v1alpha1_operation_initiator import V1alpha1OperationInitiator
-from openapi_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
-from openapi_client.model.v1alpha1_sync_operation import V1alpha1SyncOperation
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_info import V1alpha1Info
+from argocd_python_client.model.v1alpha1_operation_initiator import V1alpha1OperationInitiator
+from argocd_python_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
+from argocd_python_client.model.v1alpha1_sync_operation import V1alpha1SyncOperation
 globals()['V1alpha1Info'] = V1alpha1Info
 globals()['V1alpha1OperationInitiator'] = V1alpha1OperationInitiator
 globals()['V1alpha1RetryStrategy'] = V1alpha1RetryStrategy
 globals()['V1alpha1SyncOperation'] = V1alpha1SyncOperation
-from openapi_client.model.v1alpha1_operation import V1alpha1Operation
+from argocd_python_client.model.v1alpha1_operation import V1alpha1Operation
 
 
 class TestV1alpha1Operation(unittest.TestCase):

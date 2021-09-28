@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_helm_parameter import V1alpha1HelmParameter
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_helm_parameter import V1alpha1HelmParameter
 
 
 class TestV1alpha1HelmParameter(unittest.TestCase):

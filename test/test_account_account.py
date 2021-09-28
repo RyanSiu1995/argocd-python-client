@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.account_token import AccountToken
+import argocd_python_client
+from argocd_python_client.model.account_token import AccountToken
 globals()['AccountToken'] = AccountToken
-from openapi_client.model.account_account import AccountAccount
+from argocd_python_client.model.account_account import AccountAccount
 
 
 class TestAccountAccount(unittest.TestCase):

@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.repository_app_info import RepositoryAppInfo
+import argocd_python_client
+from argocd_python_client.model.repository_app_info import RepositoryAppInfo
 globals()['RepositoryAppInfo'] = RepositoryAppInfo
-from openapi_client.model.repository_repo_apps_response import RepositoryRepoAppsResponse
+from argocd_python_client.model.repository_repo_apps_response import RepositoryRepoAppsResponse
 
 
 class TestRepositoryRepoAppsResponse(unittest.TestCase):

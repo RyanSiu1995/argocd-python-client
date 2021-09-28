@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.account_account import AccountAccount
+import argocd_python_client
+from argocd_python_client.model.account_account import AccountAccount
 globals()['AccountAccount'] = AccountAccount
-from openapi_client.model.account_accounts_list import AccountAccountsList
+from argocd_python_client.model.account_accounts_list import AccountAccountsList
 
 
 class TestAccountAccountsList(unittest.TestCase):

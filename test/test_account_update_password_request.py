@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.account_update_password_request import AccountUpdatePasswordRequest
+import argocd_python_client
+from argocd_python_client.model.account_update_password_request import AccountUpdatePasswordRequest
 
 
 class TestAccountUpdatePasswordRequest(unittest.TestCase):

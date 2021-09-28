@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_operation_initiator import V1alpha1OperationInitiator
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_operation_initiator import V1alpha1OperationInitiator
 
 
 class TestV1alpha1OperationInitiator(unittest.TestCase):

@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_sync_strategy_apply import V1alpha1SyncStrategyApply
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_sync_strategy_apply import V1alpha1SyncStrategyApply
 
 
 class TestV1alpha1SyncStrategyApply(unittest.TestCase):

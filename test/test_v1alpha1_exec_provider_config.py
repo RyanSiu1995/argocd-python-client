@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_exec_provider_config import V1alpha1ExecProviderConfig
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_exec_provider_config import V1alpha1ExecProviderConfig
 
 
 class TestV1alpha1ExecProviderConfig(unittest.TestCase):

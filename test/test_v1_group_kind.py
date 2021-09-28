@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_group_kind import V1GroupKind
+import argocd_python_client
+from argocd_python_client.model.v1_group_kind import V1GroupKind
 
 
 class TestV1GroupKind(unittest.TestCase):

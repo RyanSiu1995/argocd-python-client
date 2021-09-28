@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_aws_auth_config import V1alpha1AWSAuthConfig
-from openapi_client.model.v1alpha1_exec_provider_config import V1alpha1ExecProviderConfig
-from openapi_client.model.v1alpha1_tls_client_config import V1alpha1TLSClientConfig
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_aws_auth_config import V1alpha1AWSAuthConfig
+from argocd_python_client.model.v1alpha1_exec_provider_config import V1alpha1ExecProviderConfig
+from argocd_python_client.model.v1alpha1_tls_client_config import V1alpha1TLSClientConfig
 globals()['V1alpha1AWSAuthConfig'] = V1alpha1AWSAuthConfig
 globals()['V1alpha1ExecProviderConfig'] = V1alpha1ExecProviderConfig
 globals()['V1alpha1TLSClientConfig'] = V1alpha1TLSClientConfig
-from openapi_client.model.v1alpha1_cluster_config import V1alpha1ClusterConfig
+from argocd_python_client.model.v1alpha1_cluster_config import V1alpha1ClusterConfig
 
 
 class TestV1alpha1ClusterConfig(unittest.TestCase):

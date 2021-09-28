@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_port_status import V1PortStatus
+import argocd_python_client
+from argocd_python_client.model.v1_port_status import V1PortStatus
 
 
 class TestV1PortStatus(unittest.TestCase):

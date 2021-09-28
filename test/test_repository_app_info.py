@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.repository_app_info import RepositoryAppInfo
+import argocd_python_client
+from argocd_python_client.model.repository_app_info import RepositoryAppInfo
 
 
 class TestRepositoryAppInfo(unittest.TestCase):

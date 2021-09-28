@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application import V1alpha1Application
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application import V1alpha1Application
 globals()['V1alpha1Application'] = V1alpha1Application
-from openapi_client.model.v1alpha1_application_watch_event import V1alpha1ApplicationWatchEvent
+from argocd_python_client.model.v1alpha1_application_watch_event import V1alpha1ApplicationWatchEvent
 
 
 class TestV1alpha1ApplicationWatchEvent(unittest.TestCase):

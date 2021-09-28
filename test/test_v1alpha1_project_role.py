@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_jwt_token import V1alpha1JWTToken
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_jwt_token import V1alpha1JWTToken
 globals()['V1alpha1JWTToken'] = V1alpha1JWTToken
-from openapi_client.model.v1alpha1_project_role import V1alpha1ProjectRole
+from argocd_python_client.model.v1alpha1_project_role import V1alpha1ProjectRole
 
 
 class TestV1alpha1ProjectRole(unittest.TestCase):

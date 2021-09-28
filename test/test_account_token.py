@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.account_token import AccountToken
+import argocd_python_client
+from argocd_python_client.model.account_token import AccountToken
 
 
 class TestAccountToken(unittest.TestCase):

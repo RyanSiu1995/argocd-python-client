@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_orphaned_resource_key import V1alpha1OrphanedResourceKey
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_orphaned_resource_key import V1alpha1OrphanedResourceKey
 globals()['V1alpha1OrphanedResourceKey'] = V1alpha1OrphanedResourceKey
-from openapi_client.model.v1alpha1_orphaned_resources_monitor_settings import V1alpha1OrphanedResourcesMonitorSettings
+from argocd_python_client.model.v1alpha1_orphaned_resources_monitor_settings import V1alpha1OrphanedResourcesMonitorSettings
 
 
 class TestV1alpha1OrphanedResourcesMonitorSettings(unittest.TestCase):

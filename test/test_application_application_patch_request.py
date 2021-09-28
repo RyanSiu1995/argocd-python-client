@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.application_application_patch_request import ApplicationApplicationPatchRequest
+import argocd_python_client
+from argocd_python_client.model.application_application_patch_request import ApplicationApplicationPatchRequest
 
 
 class TestApplicationApplicationPatchRequest(unittest.TestCase):

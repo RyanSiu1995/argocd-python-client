@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_node_system_info import V1NodeSystemInfo
+import argocd_python_client
+from argocd_python_client.model.v1_node_system_info import V1NodeSystemInfo
 
 
 class TestV1NodeSystemInfo(unittest.TestCase):

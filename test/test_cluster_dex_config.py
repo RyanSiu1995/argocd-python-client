@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.cluster_connector import ClusterConnector
+import argocd_python_client
+from argocd_python_client.model.cluster_connector import ClusterConnector
 globals()['ClusterConnector'] = ClusterConnector
-from openapi_client.model.cluster_dex_config import ClusterDexConfig
+from argocd_python_client.model.cluster_dex_config import ClusterDexConfig
 
 
 class TestClusterDexConfig(unittest.TestCase):

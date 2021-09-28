@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_health_status import V1alpha1HealthStatus
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_health_status import V1alpha1HealthStatus
 
 
 class TestV1alpha1HealthStatus(unittest.TestCase):

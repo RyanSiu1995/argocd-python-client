@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.project_project_token_response import ProjectProjectTokenResponse
+import argocd_python_client
+from argocd_python_client.model.project_project_token_response import ProjectProjectTokenResponse
 
 
 class TestProjectProjectTokenResponse(unittest.TestCase):

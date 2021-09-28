@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_object_reference import V1ObjectReference
+import argocd_python_client
+from argocd_python_client.model.v1_object_reference import V1ObjectReference
 
 
 class TestV1ObjectReference(unittest.TestCase):

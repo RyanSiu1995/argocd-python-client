@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.application_log_entry import ApplicationLogEntry
-from openapi_client.model.runtime_stream_error import RuntimeStreamError
+import argocd_python_client
+from argocd_python_client.model.application_log_entry import ApplicationLogEntry
+from argocd_python_client.model.runtime_stream_error import RuntimeStreamError
 globals()['ApplicationLogEntry'] = ApplicationLogEntry
 globals()['RuntimeStreamError'] = RuntimeStreamError
-from openapi_client.model.stream_result_of_application_log_entry import StreamResultOfApplicationLogEntry
+from argocd_python_client.model.stream_result_of_application_log_entry import StreamResultOfApplicationLogEntry
 
 
 class TestStreamResultOfApplicationLogEntry(unittest.TestCase):

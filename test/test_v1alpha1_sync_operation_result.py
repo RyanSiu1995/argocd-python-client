@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
-from openapi_client.model.v1alpha1_resource_result import V1alpha1ResourceResult
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application_source import V1alpha1ApplicationSource
+from argocd_python_client.model.v1alpha1_resource_result import V1alpha1ResourceResult
 globals()['V1alpha1ApplicationSource'] = V1alpha1ApplicationSource
 globals()['V1alpha1ResourceResult'] = V1alpha1ResourceResult
-from openapi_client.model.v1alpha1_sync_operation_result import V1alpha1SyncOperationResult
+from argocd_python_client.model.v1alpha1_sync_operation_result import V1alpha1SyncOperationResult
 
 
 class TestV1alpha1SyncOperationResult(unittest.TestCase):

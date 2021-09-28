@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_list_meta import V1ListMeta
-from openapi_client.model.v1alpha1_app_project import V1alpha1AppProject
+import argocd_python_client
+from argocd_python_client.model.v1_list_meta import V1ListMeta
+from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
 globals()['V1ListMeta'] = V1ListMeta
 globals()['V1alpha1AppProject'] = V1alpha1AppProject
-from openapi_client.model.v1alpha1_app_project_list import V1alpha1AppProjectList
+from argocd_python_client.model.v1alpha1_app_project_list import V1alpha1AppProjectList
 
 
 class TestV1alpha1AppProjectList(unittest.TestCase):

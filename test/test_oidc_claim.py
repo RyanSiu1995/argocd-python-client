@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.oidc_claim import OidcClaim
+import argocd_python_client
+from argocd_python_client.model.oidc_claim import OidcClaim
 
 
 class TestOidcClaim(unittest.TestCase):

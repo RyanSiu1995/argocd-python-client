@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_app_project import V1alpha1AppProject
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_app_project import V1alpha1AppProject
 globals()['V1alpha1AppProject'] = V1alpha1AppProject
-from openapi_client.model.project_project_create_request import ProjectProjectCreateRequest
+from argocd_python_client.model.project_project_create_request import ProjectProjectCreateRequest
 
 
 class TestProjectProjectCreateRequest(unittest.TestCase):

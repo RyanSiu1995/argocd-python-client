@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_backoff import V1alpha1Backoff
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_backoff import V1alpha1Backoff
 globals()['V1alpha1Backoff'] = V1alpha1Backoff
-from openapi_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
+from argocd_python_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
 
 
 class TestV1alpha1RetryStrategy(unittest.TestCase):

@@ -11,18 +11,18 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.application_sync_options import ApplicationSyncOptions
-from openapi_client.model.v1alpha1_info import V1alpha1Info
-from openapi_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
-from openapi_client.model.v1alpha1_sync_operation_resource import V1alpha1SyncOperationResource
-from openapi_client.model.v1alpha1_sync_strategy import V1alpha1SyncStrategy
+import argocd_python_client
+from argocd_python_client.model.application_sync_options import ApplicationSyncOptions
+from argocd_python_client.model.v1alpha1_info import V1alpha1Info
+from argocd_python_client.model.v1alpha1_retry_strategy import V1alpha1RetryStrategy
+from argocd_python_client.model.v1alpha1_sync_operation_resource import V1alpha1SyncOperationResource
+from argocd_python_client.model.v1alpha1_sync_strategy import V1alpha1SyncStrategy
 globals()['ApplicationSyncOptions'] = ApplicationSyncOptions
 globals()['V1alpha1Info'] = V1alpha1Info
 globals()['V1alpha1RetryStrategy'] = V1alpha1RetryStrategy
 globals()['V1alpha1SyncOperationResource'] = V1alpha1SyncOperationResource
 globals()['V1alpha1SyncStrategy'] = V1alpha1SyncStrategy
-from openapi_client.model.application_application_sync_request import ApplicationApplicationSyncRequest
+from argocd_python_client.model.application_application_sync_request import ApplicationApplicationSyncRequest
 
 
 class TestApplicationApplicationSyncRequest(unittest.TestCase):

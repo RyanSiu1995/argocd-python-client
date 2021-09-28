@@ -11,16 +11,16 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_time import V1Time
-from openapi_client.model.v1alpha1_cluster_config import V1alpha1ClusterConfig
-from openapi_client.model.v1alpha1_cluster_info import V1alpha1ClusterInfo
-from openapi_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
+import argocd_python_client
+from argocd_python_client.model.v1_time import V1Time
+from argocd_python_client.model.v1alpha1_cluster_config import V1alpha1ClusterConfig
+from argocd_python_client.model.v1alpha1_cluster_info import V1alpha1ClusterInfo
+from argocd_python_client.model.v1alpha1_connection_state import V1alpha1ConnectionState
 globals()['V1Time'] = V1Time
 globals()['V1alpha1ClusterConfig'] = V1alpha1ClusterConfig
 globals()['V1alpha1ClusterInfo'] = V1alpha1ClusterInfo
 globals()['V1alpha1ConnectionState'] = V1alpha1ConnectionState
-from openapi_client.model.v1alpha1_cluster import V1alpha1Cluster
+from argocd_python_client.model.v1alpha1_cluster import V1alpha1Cluster
 
 
 class TestV1alpha1Cluster(unittest.TestCase):

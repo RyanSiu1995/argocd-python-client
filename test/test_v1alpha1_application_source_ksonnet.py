@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_ksonnet_parameter import V1alpha1KsonnetParameter
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_ksonnet_parameter import V1alpha1KsonnetParameter
 globals()['V1alpha1KsonnetParameter'] = V1alpha1KsonnetParameter
-from openapi_client.model.v1alpha1_application_source_ksonnet import V1alpha1ApplicationSourceKsonnet
+from argocd_python_client.model.v1alpha1_application_source_ksonnet import V1alpha1ApplicationSourceKsonnet
 
 
 class TestV1alpha1ApplicationSourceKsonnet(unittest.TestCase):

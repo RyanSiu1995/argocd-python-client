@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.repository_helm_chart import RepositoryHelmChart
+import argocd_python_client
+from argocd_python_client.model.repository_helm_chart import RepositoryHelmChart
 globals()['RepositoryHelmChart'] = RepositoryHelmChart
-from openapi_client.model.repository_helm_charts_response import RepositoryHelmChartsResponse
+from argocd_python_client.model.repository_helm_charts_response import RepositoryHelmChartsResponse
 
 
 class TestRepositoryHelmChartsResponse(unittest.TestCase):

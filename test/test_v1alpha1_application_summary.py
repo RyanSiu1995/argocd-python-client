@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1alpha1_application_summary import V1alpha1ApplicationSummary
+import argocd_python_client
+from argocd_python_client.model.v1alpha1_application_summary import V1alpha1ApplicationSummary
 
 
 class TestV1alpha1ApplicationSummary(unittest.TestCase):

@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.cluster_help import ClusterHelp
+import argocd_python_client
+from argocd_python_client.model.cluster_help import ClusterHelp
 
 
 class TestClusterHelp(unittest.TestCase):

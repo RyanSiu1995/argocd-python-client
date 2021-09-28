@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_load_balancer_ingress import V1LoadBalancerIngress
-from openapi_client.model.v1alpha1_resource_ref import V1alpha1ResourceRef
+import argocd_python_client
+from argocd_python_client.model.v1_load_balancer_ingress import V1LoadBalancerIngress
+from argocd_python_client.model.v1alpha1_resource_ref import V1alpha1ResourceRef
 globals()['V1LoadBalancerIngress'] = V1LoadBalancerIngress
 globals()['V1alpha1ResourceRef'] = V1alpha1ResourceRef
-from openapi_client.model.v1alpha1_resource_networking_info import V1alpha1ResourceNetworkingInfo
+from argocd_python_client.model.v1alpha1_resource_networking_info import V1alpha1ResourceNetworkingInfo
 
 
 class TestV1alpha1ResourceNetworkingInfo(unittest.TestCase):

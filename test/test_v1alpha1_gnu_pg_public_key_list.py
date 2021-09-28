@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.v1_list_meta import V1ListMeta
-from openapi_client.model.v1alpha1_gnu_pg_public_key import V1alpha1GnuPGPublicKey
+import argocd_python_client
+from argocd_python_client.model.v1_list_meta import V1ListMeta
+from argocd_python_client.model.v1alpha1_gnu_pg_public_key import V1alpha1GnuPGPublicKey
 globals()['V1ListMeta'] = V1ListMeta
 globals()['V1alpha1GnuPGPublicKey'] = V1alpha1GnuPGPublicKey
-from openapi_client.model.v1alpha1_gnu_pg_public_key_list import V1alpha1GnuPGPublicKeyList
+from argocd_python_client.model.v1alpha1_gnu_pg_public_key_list import V1alpha1GnuPGPublicKeyList
 
 
 class TestV1alpha1GnuPGPublicKeyList(unittest.TestCase):
