@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **message** | **str** | Message holds any pertinent messages when attempting to perform operation (typically errors). | [optional] 
 **operation** | [**V1alpha1Operation**](V1alpha1Operation.md) |  | [optional] 
 **phase** | **str** |  | [optional] 
-**retry_count** | **str** |  | [optional] 
 **started_at** | **str** | Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal&#x3D;false +protobuf.as&#x3D;Timestamp +protobuf.options.(gogoproto.goproto_stringer)&#x3D;false | [optional] 
 **sync_result** | [**V1alpha1SyncOperationResult**](V1alpha1SyncOperationResult.md) |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]

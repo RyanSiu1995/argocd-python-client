@@ -5588,7 +5588,7 @@
           "title": "Phase is the current phase of the operation"
         },
         "retryCount": {
-          "type": "string",
+          "type": "int",
           "format": "int64",
           "title": "RetryCount contains time of operation retries"
         },

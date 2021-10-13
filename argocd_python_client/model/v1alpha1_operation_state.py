@@ -93,7 +93,6 @@ class V1alpha1OperationState(ModelNormal):
             'message': (str,),  # noqa: E501
             'operation': (V1alpha1Operation,),  # noqa: E501
             'phase': (str,),  # noqa: E501
-            'retry_count': (str,),  # noqa: E501
             'started_at': (str,),  # noqa: E501
             'sync_result': (V1alpha1SyncOperationResult,),  # noqa: E501
         }
@@ -108,7 +107,6 @@ class V1alpha1OperationState(ModelNormal):
         'message': 'message',  # noqa: E501
         'operation': 'operation',  # noqa: E501
         'phase': 'phase',  # noqa: E501
-        'retry_count': 'retryCount',  # noqa: E501
         'started_at': 'startedAt',  # noqa: E501
         'sync_result': 'syncResult',  # noqa: E501
     }
@@ -158,7 +156,6 @@ class V1alpha1OperationState(ModelNormal):
             message (str): Message holds any pertinent messages when attempting to perform operation (typically errors).. [optional]  # noqa: E501
             operation (V1alpha1Operation): [optional]  # noqa: E501
             phase (str): [optional]  # noqa: E501
-            retry_count (str): [optional]  # noqa: E501
             started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             sync_result (V1alpha1SyncOperationResult): [optional]  # noqa: E501
         """
@@ -246,7 +243,6 @@ class V1alpha1OperationState(ModelNormal):
             message (str): Message holds any pertinent messages when attempting to perform operation (typically errors).. [optional]  # noqa: E501
             operation (V1alpha1Operation): [optional]  # noqa: E501
             phase (str): [optional]  # noqa: E501
-            retry_count (str): [optional]  # noqa: E501
             started_at (str): Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.  +protobuf.options.marshal=false +protobuf.as=Timestamp +protobuf.options.(gogoproto.goproto_stringer)=false. [optional]  # noqa: E501
             sync_result (V1alpha1SyncOperationResult): [optional]  # noqa: E501
         """

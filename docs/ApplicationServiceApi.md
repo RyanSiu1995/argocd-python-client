@@ -599,7 +599,6 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                 ),
                 phase="phase_example",
-                retry_count="retry_count_example",
                 started_at="started_at_example",
                 sync_result=V1alpha1SyncOperationResult(
                     resources=[
@@ -3093,7 +3092,6 @@ with argocd_python_client.ApiClient() as api_client:
                     ),
                 ),
                 phase="phase_example",
-                retry_count="retry_count_example",
                 started_at="started_at_example",
                 sync_result=V1alpha1SyncOperationResult(
                     resources=[
